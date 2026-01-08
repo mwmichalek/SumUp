@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncUp.ClickUpService", "src\SyncUp.ClickUpService\SyncUp.ClickUpService.csproj", "{23C6DF2B-CE41-400D-BE5E-BB35B3DB4783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncUp.PlayGround", "src\SyncUp.PlayGround\SyncUp.PlayGround.csproj", "{62E1740A-FE72-43A8-A13F-A56DCEFDB668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23C6DF2B-CE41-400D-BE5E-BB35B3DB4783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C6DF2B-CE41-400D-BE5E-BB35B3DB4783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C6DF2B-CE41-400D-BE5E-BB35B3DB4783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C6DF2B-CE41-400D-BE5E-BB35B3DB4783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E1740A-FE72-43A8-A13F-A56DCEFDB668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E1740A-FE72-43A8-A13F-A56DCEFDB668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E1740A-FE72-43A8-A13F-A56DCEFDB668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E1740A-FE72-43A8-A13F-A56DCEFDB668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
