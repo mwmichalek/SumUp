@@ -5,23 +5,23 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Time_entries.Item
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Item
 {
     [Obsolete("This class is obsolete. Use WithTimer_GetResponse instead.")]
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
-    public partial class WithTimer_Response : global::ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_GetResponse, IParsable
+    public partial class WithTimer_Response : global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_GetResponse, IParsable
     #pragma warning restore CS1591
     {
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static new global::ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static new global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Item.WithTimer_Response();
         }
     }
 }

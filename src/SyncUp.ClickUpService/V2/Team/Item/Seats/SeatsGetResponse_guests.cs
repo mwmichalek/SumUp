@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Seats
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Seats
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,23 +17,23 @@ namespace ClickUp.Api.V2.Team.Item.Seats
         /// <summary>The empty_guest_seats property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats? EmptyGuestSeats { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats? EmptyGuestSeats { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats EmptyGuestSeats { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats EmptyGuestSeats { get; set; }
 #endif
         /// <summary>The filled_guest_seats property</summary>
         public int? FilledGuestSeats { get; set; }
         /// <summary>The total_guest_seats property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats? TotalGuestSeats { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats? TotalGuestSeats { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats TotalGuestSeats { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats TotalGuestSeats { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests"/> and sets the default values.
         /// </summary>
         public SeatsGetResponse_guests()
         {
@@ -42,12 +42,12 @@ namespace ClickUp.Api.V2.Team.Item.Seats
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -57,9 +57,9 @@ namespace ClickUp.Api.V2.Team.Item.Seats
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "empty_guest_seats", n => { EmptyGuestSeats = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats>(global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats.CreateFromDiscriminatorValue); } },
+                { "empty_guest_seats", n => { EmptyGuestSeats = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats>(global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats.CreateFromDiscriminatorValue); } },
                 { "filled_guest_seats", n => { FilledGuestSeats = n.GetIntValue(); } },
-                { "total_guest_seats", n => { TotalGuestSeats = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats>(global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats.CreateFromDiscriminatorValue); } },
+                { "total_guest_seats", n => { TotalGuestSeats = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats>(global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -69,9 +69,9 @@ namespace ClickUp.Api.V2.Team.Item.Seats
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats>("empty_guest_seats", EmptyGuestSeats);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats>("empty_guest_seats", EmptyGuestSeats);
             writer.WriteIntValue("filled_guest_seats", FilledGuestSeats);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats>("total_guest_seats", TotalGuestSeats);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats>("total_guest_seats", TotalGuestSeats);
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
@@ -93,13 +93,13 @@ namespace ClickUp.Api.V2.Team.Item.Seats
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats();
+                var result = new global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_empty_guest_seats();
                 if(parseNode.GetIntValue() is int integerValue)
                 {
                     result.Integer = integerValue;
@@ -154,13 +154,13 @@ namespace ClickUp.Api.V2.Team.Item.Seats
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats();
+                var result = new global::SyncUp.ClickUp.Api.V2.Team.Item.Seats.SeatsGetResponse_guests.SeatsGetResponse_guests_total_guest_seats();
                 if(parseNode.GetIntValue() is int integerValue)
                 {
                     result.Integer = integerValue;

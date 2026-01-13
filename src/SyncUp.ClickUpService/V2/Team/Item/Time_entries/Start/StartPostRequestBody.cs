@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -27,10 +27,10 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
         /// <summary>Users on the Business Plan and above can include a time tracking label.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>? Tags { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>? Tags { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags> Tags { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags> Tags { get; set; }
 #endif
         /// <summary>The tid property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -41,7 +41,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
         public string Tid { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody"/> and sets the default values.
         /// </summary>
         public StartPostRequestBody()
         {
@@ -50,12 +50,12 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -67,7 +67,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
             {
                 { "billable", n => { Billable = n.GetBoolValue(); } },
                 { "description", n => { Description = n.GetStringValue(); } },
-                { "tags", n => { Tags = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>(global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "tags", n => { Tags = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "tid", n => { Tid = n.GetStringValue(); } },
             };
         }
@@ -80,7 +80,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Start
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("billable", Billable);
             writer.WriteStringValue("description", Description);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>("tags", Tags);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Start.StartPostRequestBody_tags>("tags", Tags);
             writer.WriteStringValue("tid", Tid);
             writer.WriteAdditionalData(AdditionalData);
         }

@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.Field
+namespace SyncUp.ClickUp.Api.V2.List.Item.Field
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,13 +17,13 @@ namespace ClickUp.Api.V2.List.Item.Field
         /// <summary>The fields property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>? Fields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>? Fields { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields> Fields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields> Fields { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse"/> and sets the default values.
         /// </summary>
         public FieldGetResponse()
         {
@@ -32,12 +32,12 @@ namespace ClickUp.Api.V2.List.Item.Field
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,7 +47,7 @@ namespace ClickUp.Api.V2.List.Item.Field
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "fields", n => { Fields = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>(global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "fields", n => { Fields = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>(global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields.CreateFromDiscriminatorValue)?.AsList(); } },
             };
         }
         /// <summary>
@@ -57,7 +57,7 @@ namespace ClickUp.Api.V2.List.Item.Field
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>("fields", Fields);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields>("fields", Fields);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

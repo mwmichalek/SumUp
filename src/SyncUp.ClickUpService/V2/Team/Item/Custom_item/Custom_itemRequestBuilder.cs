@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Custom_item
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Custom_item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\team\{team_-id}\custom_item
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Team.Item.Custom_item
     public partial class Custom_itemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Team.Item.Custom_item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,39 +35,39 @@ namespace ClickUp.Api.V2.Team.Item.Custom_item
         /// <summary>
         /// View the custom task types available in a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse?> GetAsCustom_itemGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse?> GetAsCustom_itemGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse> GetAsCustom_itemGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse> GetAsCustom_itemGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the custom task types available in a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsCustom_itemGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the custom task types available in a Workspace.
@@ -91,11 +91,11 @@ namespace ClickUp.Api.V2.Team.Item.Custom_item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Custom_item.Custom_itemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

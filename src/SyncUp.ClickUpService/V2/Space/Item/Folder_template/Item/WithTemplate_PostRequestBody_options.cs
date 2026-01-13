@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
+namespace SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item
 {
     /// <summary>
     /// Options for creating the Folder
@@ -82,7 +82,7 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         /// <summary>Include time (hours, minutes and seconds)</summary>
         public bool? TimeEstimate { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options"/> and sets the default values.
         /// </summary>
         public WithTemplate_PostRequestBody_options()
         {
@@ -91,12 +91,12 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostRequestBody_options();
         }
         /// <summary>
         /// The deserialization information for the current model

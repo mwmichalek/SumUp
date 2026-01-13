@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -53,18 +53,18 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>The type_config property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config? TypeConfig { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config? TypeConfig { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config TypeConfig { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config TypeConfig { get; set; }
 #endif
         /// <summary>The value property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value? Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value? Value { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value Value { get; set; }
 #endif
         /// <summary>The value_markdown property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -83,7 +83,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         public string ValueRichtext { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields"/> and sets the default values.
         /// </summary>
         public WithTask_GetResponse_custom_fields()
         {
@@ -92,12 +92,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -113,8 +113,8 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "required", n => { Required = n.GetBoolValue(); } },
                 { "type", n => { Type = n.GetStringValue(); } },
-                { "type_config", n => { TypeConfig = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config.CreateFromDiscriminatorValue); } },
-                { "value", n => { Value = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value.CreateFromDiscriminatorValue); } },
+                { "type_config", n => { TypeConfig = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config.CreateFromDiscriminatorValue); } },
+                { "value", n => { Value = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value.CreateFromDiscriminatorValue); } },
                 { "value_markdown", n => { ValueMarkdown = n.GetStringValue(); } },
                 { "value_richtext", n => { ValueRichtext = n.GetStringValue(); } },
             };
@@ -132,63 +132,63 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
             writer.WriteStringValue("name", Name);
             writer.WriteBoolValue("required", Required);
             writer.WriteStringValue("type", Type);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config>("type_config", TypeConfig);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value>("value", Value);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_type_config>("type_config", TypeConfig);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value>("value", Value);
             writer.WriteStringValue("value_markdown", ValueMarkdown);
             writer.WriteStringValue("value_richtext", ValueRichtext);
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1"/>, <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2"/>, <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3"/>
+        /// Composed type wrapper for classes <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1"/>, <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2"/>, <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class WithTask_GetResponse_custom_fields_value : IComposedTypeWrapper, IParsable
         {
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1? WithTaskGetResponseCustomFieldsValueMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1? WithTaskGetResponseCustomFieldsValueMember1 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1 WithTaskGetResponseCustomFieldsValueMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1 WithTaskGetResponseCustomFieldsValueMember1 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2? WithTaskGetResponseCustomFieldsValueMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2? WithTaskGetResponseCustomFieldsValueMember2 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2 WithTaskGetResponseCustomFieldsValueMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2 WithTaskGetResponseCustomFieldsValueMember2 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3? WithTaskGetResponseCustomFieldsValueMember3 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3? WithTaskGetResponseCustomFieldsValueMember3 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3 WithTaskGetResponseCustomFieldsValueMember3 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3 WithTaskGetResponseCustomFieldsValueMember3 { get; set; }
 #endif
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value();
+                var result = new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields.WithTask_GetResponse_custom_fields_value();
                 if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.WithTaskGetResponseCustomFieldsValueMember1 = new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1();
+                    result.WithTaskGetResponseCustomFieldsValueMember1 = new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1();
                 }
                 else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.WithTaskGetResponseCustomFieldsValueMember2 = new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2();
+                    result.WithTaskGetResponseCustomFieldsValueMember2 = new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2();
                 }
                 else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.WithTaskGetResponseCustomFieldsValueMember3 = new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3();
+                    result.WithTaskGetResponseCustomFieldsValueMember3 = new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3();
                 }
                 return result;
             }
@@ -221,15 +221,15 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
                 if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
                 if(WithTaskGetResponseCustomFieldsValueMember1 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1>(null, WithTaskGetResponseCustomFieldsValueMember1);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember1>(null, WithTaskGetResponseCustomFieldsValueMember1);
                 }
                 else if(WithTaskGetResponseCustomFieldsValueMember2 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2>(null, WithTaskGetResponseCustomFieldsValueMember2);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember2>(null, WithTaskGetResponseCustomFieldsValueMember2);
                 }
                 else if(WithTaskGetResponseCustomFieldsValueMember3 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3>(null, WithTaskGetResponseCustomFieldsValueMember3);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_GetResponse_custom_fields_valueMember3>(null, WithTaskGetResponseCustomFieldsValueMember3);
                 }
             }
         }

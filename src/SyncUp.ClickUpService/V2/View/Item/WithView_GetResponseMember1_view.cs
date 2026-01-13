@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -71,9 +71,9 @@ namespace ClickUp.Api.V2.View.Item
         public UntypedNode Sorting { get; set; }
 #endif
         /// <summary>The type property</summary>
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type? Type { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type? Type { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view"/> and sets the default values.
         /// </summary>
         public WithView_GetResponseMember1_view()
         {
@@ -82,12 +82,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -104,7 +104,7 @@ namespace ClickUp.Api.V2.View.Item
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "parent", n => { Parent = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "sorting", n => { Sorting = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "type", n => { Type = n.GetEnumValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type>(); } },
+                { "type", n => { Type = n.GetEnumValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type>(); } },
             };
         }
         /// <summary>
@@ -121,7 +121,7 @@ namespace ClickUp.Api.V2.View.Item
             writer.WriteStringValue("name", Name);
             writer.WriteObjectValue<UntypedNode>("parent", Parent);
             writer.WriteObjectValue<UntypedNode>("sorting", Sorting);
-            writer.WriteEnumValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type>("type", Type);
+            writer.WriteEnumValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember1_view_type>("type", Type);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

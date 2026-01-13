@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.TaskNamespace
+namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
 {
     /// <summary>
     /// Enter an array of user ids or a Team id in the `add` property to add them to a People Custom Field. Enter them into the `rem` property to remove users from a People Custom Field. You can get a list of people in the Workspace using [Get Authorized Teams (Workspaces).](ref:getauthorizedteams) People Custom Fields are nullable: `&quot;value&quot;: null`.
@@ -26,13 +26,13 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>The value property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value? Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value? Value { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value Value { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/> and sets the default values.
         /// </summary>
         public TaskPostRequestBody_custom_fieldsMember10()
         {
@@ -41,12 +41,12 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10 CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10 CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -57,7 +57,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
             return new Dictionary<string, Action<IParseNode>>
             {
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "value", n => { Value = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value>(global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value.CreateFromDiscriminatorValue); } },
+                { "value", n => { Value = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value>(global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -68,7 +68,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("id", Id);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value>("value", Value);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10_value>("value", Value);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

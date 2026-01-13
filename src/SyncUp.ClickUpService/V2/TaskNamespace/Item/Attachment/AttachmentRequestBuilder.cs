@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\task\{task_id}\attachment
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
     public partial class AttachmentRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,43 +35,43 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
         /// <summary>
         /// Upload a file to a task as an attachment. Files stored in the cloud cannot be used in this API request.\ \***Note:** This request uses multipart/form-data as the content type.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse?> PostAsAttachmentPostResponseAsync(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse?> PostAsAttachmentPostResponseAsync(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse> PostAsAttachmentPostResponseAsync(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse> PostAsAttachmentPostResponseAsync(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Upload a file to a task as an attachment. Files stored in the cloud cannot be used in this API request.\ \***Note:** This request uses multipart/form-data as the content type.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsAttachmentPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse?> PostAsync(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse> PostAsync(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Upload a file to a task as an attachment. Files stored in the cloud cannot be used in this API request.\ \***Note:** This request uses multipart/form-data as the content type.*
@@ -81,11 +81,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentPostRequestBody body, Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -98,11 +98,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Upload a file to a task as an attachment. Files stored in the cloud cannot be used in this API request.\ \***Note:** This request uses multipart/form-data as the content type.*
@@ -122,7 +122,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Attachment
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class AttachmentRequestBuilderPostRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>
+        public partial class AttachmentRequestBuilderPostRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Attachment.AttachmentRequestBuilder.AttachmentRequestBuilderPostQueryParameters>
         {
         }
     }

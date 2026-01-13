@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Goal.Item.Key_result
+namespace SyncUp.ClickUp.Api.V2.Goal.Item.Key_result
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\goal\{goal_id}\key_result
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Goal.Item.Key_result
     public partial class Key_resultRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Goal.Item.Key_result
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,43 +35,43 @@ namespace ClickUp.Api.V2.Goal.Item.Key_result
         /// <summary>
         /// Add a Target to a Goal.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse?> PostAsKey_resultPostResponseAsync(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse?> PostAsKey_resultPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse> PostAsKey_resultPostResponseAsync(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse> PostAsKey_resultPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse>(requestInfo, global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a Target to a Goal.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsKey_resultPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse?> PostAsync(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse> PostAsync(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse>(requestInfo, global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a Target to a Goal.
@@ -81,11 +81,11 @@ namespace ClickUp.Api.V2.Goal.Item.Key_result
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -98,11 +98,11 @@ namespace ClickUp.Api.V2.Goal.Item.Key_result
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Goal.Item.Key_result.Key_resultRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

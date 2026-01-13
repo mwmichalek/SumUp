@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Goal
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Goal
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -103,10 +103,10 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         /// <summary>The members property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>? Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>? Members { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members> Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members> Members { get; set; }
 #endif
         /// <summary>The multiple_owners property</summary>
         public bool? MultipleOwners { get; set; }
@@ -165,7 +165,7 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         public string TeamId { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals"/> and sets the default values.
         /// </summary>
         public GoalGetResponse_goals()
         {
@@ -174,12 +174,12 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -202,7 +202,7 @@ namespace ClickUp.Api.V2.Team.Item.Goal
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "key_result_count", n => { KeyResultCount = n.GetIntValue(); } },
                 { "last_update", n => { LastUpdate = n.GetStringValue(); } },
-                { "members", n => { Members = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>(global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "members", n => { Members = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>(global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "multiple_owners", n => { MultipleOwners = n.GetBoolValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "owner", n => { Owner = n.GetStringValue(); } },
@@ -235,7 +235,7 @@ namespace ClickUp.Api.V2.Team.Item.Goal
             writer.WriteStringValue("id", Id);
             writer.WriteIntValue("key_result_count", KeyResultCount);
             writer.WriteStringValue("last_update", LastUpdate);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>("members", Members);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_goals_members>("members", Members);
             writer.WriteBoolValue("multiple_owners", MultipleOwners);
             writer.WriteStringValue("name", Name);
             writer.WriteStringValue("owner", Owner);

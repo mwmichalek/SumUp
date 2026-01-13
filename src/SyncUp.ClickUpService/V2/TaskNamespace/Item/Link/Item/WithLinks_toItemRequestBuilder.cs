@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\task\{task_id}\link\{links_to}
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
     public partial class WithLinks_toItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,76 +35,76 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <summary>
         /// Remove the link between two tasks.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse?> DeleteAsWithLinks_toDeleteResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse?> DeleteAsWithLinks_toDeleteResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse> DeleteAsWithLinks_toDeleteResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse> DeleteAsWithLinks_toDeleteResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove the link between two tasks.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsWithLinks_toDeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse?> DeleteAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse?> DeleteAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse> DeleteAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse> DeleteAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// This is the equivalent of the feature _Task Links_ in the right-hand sidebar of a Task.  It allows you to link two tasks together. General links or links to other objects than tasks are not supported.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse?> PostAsWithLinks_toPostResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse?> PostAsWithLinks_toPostResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse> PostAsWithLinks_toPostResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse> PostAsWithLinks_toPostResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// This is the equivalent of the feature _Task Links_ in the right-hand sidebar of a Task.  It allows you to link two tasks together. General links or links to other objects than tasks are not supported.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsWithLinks_toPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse?> PostAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse?> PostAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse> PostAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse> PostAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove the link between two tasks.
@@ -113,11 +113,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.DELETE, UrlTemplate, PathParameters);
@@ -132,11 +132,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
@@ -147,11 +147,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Remove the link between two tasks.
@@ -171,7 +171,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithLinks_toItemRequestBuilderDeleteRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>
+        public partial class WithLinks_toItemRequestBuilderDeleteRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderDeleteQueryParameters>
         {
         }
         /// <summary>
@@ -192,7 +192,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithLinks_toItemRequestBuilderPostRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>
+        public partial class WithLinks_toItemRequestBuilderPostRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toItemRequestBuilder.WithLinks_toItemRequestBuilderPostQueryParameters>
         {
         }
     }

@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Space.Item.Folder
+namespace SyncUp.ClickUp.Api.V2.Space.Item.Folder
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\space\{space_id}\folder
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Space.Item.Folder
     public partial class FolderRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,80 +35,80 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         /// <summary>
         /// View the Folders in a Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse?> GetAsFolderGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse?> GetAsFolderGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse> GetAsFolderGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse> GetAsFolderGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse>(requestInfo, global::ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the Folders in a Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsFolderGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse>(requestInfo, global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a new Folder to a Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse?> PostAsFolderPostResponseAsync(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse?> PostAsFolderPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse> PostAsFolderPostResponseAsync(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse> PostAsFolderPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse>(requestInfo, global::ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a new Folder to a Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsFolderPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse?> PostAsync(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse> PostAsync(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse>(requestInfo, global::ClickUp.Api.V2.Space.Item.Folder.FolderResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the Folders in a Space.
@@ -117,11 +117,11 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -137,11 +137,11 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -154,11 +154,11 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// View the Folders in a Space.
@@ -174,7 +174,7 @@ namespace ClickUp.Api.V2.Space.Item.Folder
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class FolderRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>
+        public partial class FolderRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder.FolderRequestBuilder.FolderRequestBuilderGetQueryParameters>
         {
         }
         /// <summary>

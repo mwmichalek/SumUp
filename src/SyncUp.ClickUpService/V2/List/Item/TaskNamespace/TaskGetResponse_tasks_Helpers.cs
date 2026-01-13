@@ -1,4 +1,4 @@
-﻿namespace ClickUp.Api.V2.List.Item.TaskNamespace;
+﻿namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace;
 
 public partial class TaskGetResponse_tasks
 {

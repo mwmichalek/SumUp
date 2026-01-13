@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\task\{task_id}\tag\{tag_name}
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
     public partial class WithTag_nameItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,76 +35,76 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// <summary>
         /// Remove a Tag from a task. This does not delete the Tag from the Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse?> DeleteAsWithTag_nameDeleteResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse?> DeleteAsWithTag_nameDeleteResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse> DeleteAsWithTag_nameDeleteResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse> DeleteAsWithTag_nameDeleteResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove a Tag from a task. This does not delete the Tag from the Space.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsWithTag_nameDeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse?> DeleteAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse?> DeleteAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse> DeleteAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse> DeleteAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a Tag to a task.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse?> PostAsWithTag_namePostResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse?> PostAsWithTag_namePostResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse> PostAsWithTag_namePostResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse> PostAsWithTag_namePostResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_namePostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a Tag to a task.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsWithTag_namePostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse?> PostAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse?> PostAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse> PostAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse> PostAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove a Tag from a task. This does not delete the Tag from the Space.
@@ -113,11 +113,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.DELETE, UrlTemplate, PathParameters);
@@ -132,11 +132,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
@@ -147,11 +147,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Remove a Tag from a task. This does not delete the Tag from the Space.
@@ -171,7 +171,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithTag_nameItemRequestBuilderDeleteRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>
+        public partial class WithTag_nameItemRequestBuilderDeleteRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderDeleteQueryParameters>
         {
         }
         /// <summary>
@@ -192,7 +192,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Tag.Item
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithTag_nameItemRequestBuilderPostRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>
+        public partial class WithTag_nameItemRequestBuilderPostRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Tag.Item.WithTag_nameItemRequestBuilder.WithTag_nameItemRequestBuilderPostQueryParameters>
         {
         }
     }

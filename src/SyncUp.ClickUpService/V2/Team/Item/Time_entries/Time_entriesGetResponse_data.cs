@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Time_entries
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Time_entries
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -99,10 +99,10 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries
         /// <summary>The task property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task? Task { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task? Task { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task Task { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task Task { get; set; }
 #endif
         /// <summary>The task_location property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -145,7 +145,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries
         public string Wid { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data"/> and sets the default values.
         /// </summary>
         public Time_entriesGetResponse_data()
         {
@@ -154,12 +154,12 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -180,7 +180,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries
                 { "source", n => { Source = n.GetStringValue(); } },
                 { "start", n => { Start = n.GetStringValue(); } },
                 { "tags", n => { Tags = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
-                { "task", n => { Task = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task>(global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task.CreateFromDiscriminatorValue); } },
+                { "task", n => { Task = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task>(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task.CreateFromDiscriminatorValue); } },
                 { "task_location", n => { TaskLocation = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "task_tags", n => { TaskTags = n.GetCollectionOfPrimitiveValues<UntypedNode>()?.AsList(); } },
                 { "task_url", n => { TaskUrl = n.GetStringValue(); } },
@@ -206,7 +206,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries
             writer.WriteStringValue("source", Source);
             writer.WriteStringValue("start", Start);
             writer.WriteCollectionOfPrimitiveValues<string>("tags", Tags);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task>("task", Task);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Time_entriesGetResponse_data_task>("task", Task);
             writer.WriteObjectValue<UntypedNode>("task_location", TaskLocation);
             writer.WriteCollectionOfPrimitiveValues<UntypedNode>("task_tags", TaskTags);
             writer.WriteStringValue("task_url", TaskUrl);

@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.List.Item.TaskNamespace.Item
+namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\list\{list_id}\task\{task_id}
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace.Item
     public partial class WithTask_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,76 +35,76 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace.Item
         /// <summary>
         /// Remove a task from an additional List. You can&apos;t remove a task from its home List. \ \***Note:** This endpoint requires the [Tasks in Multiple List ClickApp](https://help.clickup.com/hc/en-us/articles/6309958824727-Tasks-in-Multiple-Lists) to be enabled.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse?> DeleteAsWithTask_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse?> DeleteAsWithTask_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse> DeleteAsWithTask_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse> DeleteAsWithTask_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove a task from an additional List. You can&apos;t remove a task from its home List. \ \***Note:** This endpoint requires the [Tasks in Multiple List ClickApp](https://help.clickup.com/hc/en-us/articles/6309958824727-Tasks-in-Multiple-Lists) to be enabled.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsWithTask_DeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response>(requestInfo, global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a task to an additional List. \ \***Note:** This endpoint requires the [Tasks in Multiple List ClickApp](https://help.clickup.com/hc/en-us/articles/6309958824727-Tasks-in-Multiple-Lists) to be enabled.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse?> PostAsWithTask_PostResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse?> PostAsWithTask_PostResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse> PostAsWithTask_PostResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse> PostAsWithTask_PostResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_PostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a task to an additional List. \ \***Note:** This endpoint requires the [Tasks in Multiple List ClickApp](https://help.clickup.com/hc/en-us/articles/6309958824727-Tasks-in-Multiple-Lists) to be enabled.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsWithTask_PostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response?> PostAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response?> PostAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response> PostAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response> PostAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response>(requestInfo, global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove a task from an additional List. You can&apos;t remove a task from its home List. \ \***Note:** This endpoint requires the [Tasks in Multiple List ClickApp](https://help.clickup.com/hc/en-us/articles/6309958824727-Tasks-in-Multiple-Lists) to be enabled.*
@@ -147,11 +147,11 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.Item.WithTask_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

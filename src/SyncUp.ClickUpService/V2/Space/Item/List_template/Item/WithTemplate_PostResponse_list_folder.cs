@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item.List_template.Item
+namespace SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item
 {
     /// <summary>
     /// Information about the parent Folder containing this List, if applicable
@@ -36,7 +36,7 @@ namespace ClickUp.Api.V2.Space.Item.List_template.Item
         public string Name { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder"/> and sets the default values.
         /// </summary>
         public WithTemplate_PostResponse_list_folder()
         {
@@ -45,12 +45,12 @@ namespace ClickUp.Api.V2.Space.Item.List_template.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_folder();
         }
         /// <summary>
         /// The deserialization information for the current model

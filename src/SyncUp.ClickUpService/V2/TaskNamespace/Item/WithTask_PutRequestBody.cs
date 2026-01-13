@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -19,10 +19,10 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>The assignees property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees? Assignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees? Assignees { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees Assignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees Assignees { get; set; }
 #endif
         /// <summary>The custom task type ID for this task. A value of `null` (default) sets the task type to type &quot;Task&quot;.\ \To get a list of available custom task type IDs for your Workspace, use the [Get Custom Task Types endpoint](ref:getcustomitems).</summary>
         public double? CustomItemId { get; set; }
@@ -41,10 +41,10 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>The group_assignees property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees? GroupAssignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees? GroupAssignees { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees GroupAssignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees GroupAssignees { get; set; }
 #endif
         /// <summary>Markdown formatted description for the task. If both `markdown_content` and `description` are provided, `markdown_content` will be used instead of `description`.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -91,13 +91,13 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>The watchers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers? Watchers { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers? Watchers { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers Watchers { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers Watchers { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody"/> and sets the default values.
         /// </summary>
         public WithTask_PutRequestBody()
         {
@@ -106,12 +106,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -122,12 +122,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
             return new Dictionary<string, Action<IParseNode>>
             {
                 { "archived", n => { Archived = n.GetBoolValue(); } },
-                { "assignees", n => { Assignees = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees.CreateFromDiscriminatorValue); } },
+                { "assignees", n => { Assignees = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees.CreateFromDiscriminatorValue); } },
                 { "custom_item_id", n => { CustomItemId = n.GetDoubleValue(); } },
                 { "description", n => { Description = n.GetStringValue(); } },
                 { "due_date", n => { DueDate = n.GetIntValue(); } },
                 { "due_date_time", n => { DueDateTime = n.GetBoolValue(); } },
-                { "group_assignees", n => { GroupAssignees = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees.CreateFromDiscriminatorValue); } },
+                { "group_assignees", n => { GroupAssignees = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees.CreateFromDiscriminatorValue); } },
                 { "markdown_content", n => { MarkdownContent = n.GetStringValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "parent", n => { Parent = n.GetStringValue(); } },
@@ -137,7 +137,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
                 { "start_date_time", n => { StartDateTime = n.GetBoolValue(); } },
                 { "status", n => { Status = n.GetStringValue(); } },
                 { "time_estimate", n => { TimeEstimate = n.GetIntValue(); } },
-                { "watchers", n => { Watchers = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers.CreateFromDiscriminatorValue); } },
+                { "watchers", n => { Watchers = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -148,12 +148,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("archived", Archived);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees>("assignees", Assignees);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_assignees>("assignees", Assignees);
             writer.WriteDoubleValue("custom_item_id", CustomItemId);
             writer.WriteStringValue("description", Description);
             writer.WriteIntValue("due_date", DueDate);
             writer.WriteBoolValue("due_date_time", DueDateTime);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees>("group_assignees", GroupAssignees);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_group_assignees>("group_assignees", GroupAssignees);
             writer.WriteStringValue("markdown_content", MarkdownContent);
             writer.WriteStringValue("name", Name);
             writer.WriteStringValue("parent", Parent);
@@ -163,7 +163,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
             writer.WriteBoolValue("start_date_time", StartDateTime);
             writer.WriteStringValue("status", Status);
             writer.WriteIntValue("time_estimate", TimeEstimate);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers>("watchers", Watchers);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutRequestBody_watchers>("watchers", Watchers);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

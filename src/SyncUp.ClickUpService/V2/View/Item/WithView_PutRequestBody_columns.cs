@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     /// <summary>
     /// Custom Fields added to a view at the Everything level will be added to all tasks in your Workspace. Once Custom Fields are added to one of these views, you cannot move it to another level of the Hierarchy.
@@ -24,7 +24,7 @@ namespace ClickUp.Api.V2.View.Item
         public List<string> Fields { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns"/> and sets the default values.
         /// </summary>
         public WithView_PutRequestBody_columns()
         {
@@ -33,12 +33,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns();
         }
         /// <summary>
         /// The deserialization information for the current model

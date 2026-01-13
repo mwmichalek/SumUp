@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -53,10 +53,10 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>The parent property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent? Parent { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent? Parent { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent Parent { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent Parent { get; set; }
 #endif
         /// <summary>The protected property</summary>
         public bool? Protected { get; set; }
@@ -87,7 +87,7 @@ namespace ClickUp.Api.V2.View.Item
         public string PublicUrl { get; set; }
 #endif
         /// <summary>The type property</summary>
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type? Type { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type? Type { get; set; }
         /// <summary>The visibility property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -97,7 +97,7 @@ namespace ClickUp.Api.V2.View.Item
         public string Visibility { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view"/> and sets the default values.
         /// </summary>
         public WithView_GetResponseMember2_view()
         {
@@ -106,12 +106,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -127,13 +127,13 @@ namespace ClickUp.Api.V2.View.Item
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "orderindex", n => { Orderindex = n.GetIntValue(); } },
-                { "parent", n => { Parent = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent>(global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent.CreateFromDiscriminatorValue); } },
+                { "parent", n => { Parent = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent.CreateFromDiscriminatorValue); } },
                 { "protected", n => { Protected = n.GetBoolValue(); } },
                 { "protected_by", n => { ProtectedBy = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "protected_note", n => { ProtectedNote = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "public", n => { Public = n.GetBoolValue(); } },
                 { "public_url", n => { PublicUrl = n.GetStringValue(); } },
-                { "type", n => { Type = n.GetEnumValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type>(); } },
+                { "type", n => { Type = n.GetEnumValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type>(); } },
                 { "visibility", n => { Visibility = n.GetStringValue(); } },
             };
         }
@@ -150,13 +150,13 @@ namespace ClickUp.Api.V2.View.Item
             writer.WriteStringValue("id", Id);
             writer.WriteStringValue("name", Name);
             writer.WriteIntValue("orderindex", Orderindex);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent>("parent", Parent);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_parent>("parent", Parent);
             writer.WriteBoolValue("protected", Protected);
             writer.WriteObjectValue<UntypedNode>("protected_by", ProtectedBy);
             writer.WriteObjectValue<UntypedNode>("protected_note", ProtectedNote);
             writer.WriteBoolValue("public", Public);
             writer.WriteStringValue("public_url", PublicUrl);
-            writer.WriteEnumValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type>("type", Type);
+            writer.WriteEnumValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view_type>("type", Type);
             writer.WriteStringValue("visibility", Visibility);
             writer.WriteAdditionalData(AdditionalData);
         }

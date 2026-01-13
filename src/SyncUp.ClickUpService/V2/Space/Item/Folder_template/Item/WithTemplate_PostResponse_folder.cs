@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
+namespace SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -29,10 +29,10 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         /// <summary>Lists contained in the Folder</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>? Lists { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>? Lists { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists> Lists { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists> Lists { get; set; }
 #endif
         /// <summary>Name of the Folder</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -57,18 +57,18 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         /// <summary>The space property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space? Space { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space? Space { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space Space { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space Space { get; set; }
 #endif
         /// <summary>List of statuses available in the Folder</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>? Statuses { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>? Statuses { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses> Statuses { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses> Statuses { get; set; }
 #endif
         /// <summary>Number of tasks in the Folder</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -79,7 +79,7 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         public string TaskCount { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder"/> and sets the default values.
         /// </summary>
         public WithTemplate_PostResponse_folder()
         {
@@ -88,12 +88,12 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -106,13 +106,13 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
                 { "archived", n => { Archived = n.GetBoolValue(); } },
                 { "hidden", n => { Hidden = n.GetBoolValue(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "lists", n => { Lists = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>(global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "lists", n => { Lists = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "orderindex", n => { Orderindex = n.GetIntValue(); } },
                 { "override_statuses", n => { OverrideStatuses = n.GetBoolValue(); } },
                 { "permission_level", n => { PermissionLevel = n.GetStringValue(); } },
-                { "space", n => { Space = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space>(global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space.CreateFromDiscriminatorValue); } },
-                { "statuses", n => { Statuses = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>(global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "space", n => { Space = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space>(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space.CreateFromDiscriminatorValue); } },
+                { "statuses", n => { Statuses = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>(global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "task_count", n => { TaskCount = n.GetStringValue(); } },
             };
         }
@@ -126,13 +126,13 @@ namespace ClickUp.Api.V2.Space.Item.Folder_template.Item
             writer.WriteBoolValue("archived", Archived);
             writer.WriteBoolValue("hidden", Hidden);
             writer.WriteStringValue("id", Id);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>("lists", Lists);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_lists>("lists", Lists);
             writer.WriteStringValue("name", Name);
             writer.WriteIntValue("orderindex", Orderindex);
             writer.WriteBoolValue("override_statuses", OverrideStatuses);
             writer.WriteStringValue("permission_level", PermissionLevel);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space>("space", Space);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>("statuses", Statuses);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_space>("space", Space);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Space.Item.Folder_template.Item.WithTemplate_PostResponse_folder_statuses>("statuses", Statuses);
             writer.WriteStringValue("task_count", TaskCount);
             writer.WriteAdditionalData(AdditionalData);
         }

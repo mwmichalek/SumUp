@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Space
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Space
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -19,10 +19,10 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The features property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features? Features { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features? Features { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features Features { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features Features { get; set; }
 #endif
         /// <summary>The id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -47,13 +47,13 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The statuses property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>? Statuses { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>? Statuses { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses> Statuses { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses> Statuses { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse"/> and sets the default values.
         /// </summary>
         public SpacePostResponse()
         {
@@ -62,12 +62,12 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -78,12 +78,12 @@ namespace ClickUp.Api.V2.Team.Item.Space
             return new Dictionary<string, Action<IParseNode>>
             {
                 { "archived", n => { Archived = n.GetBoolValue(); } },
-                { "features", n => { Features = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features.CreateFromDiscriminatorValue); } },
+                { "features", n => { Features = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features.CreateFromDiscriminatorValue); } },
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "multiple_assignees", n => { MultipleAssignees = n.GetBoolValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "private", n => { Private = n.GetBoolValue(); } },
-                { "statuses", n => { Statuses = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "statuses", n => { Statuses = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses.CreateFromDiscriminatorValue)?.AsList(); } },
             };
         }
         /// <summary>
@@ -94,12 +94,12 @@ namespace ClickUp.Api.V2.Team.Item.Space
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("archived", Archived);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features>("features", Features);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features>("features", Features);
             writer.WriteStringValue("id", Id);
             writer.WriteBoolValue("multiple_assignees", MultipleAssignees);
             writer.WriteStringValue("name", Name);
             writer.WriteBoolValue("private", Private);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>("statuses", Statuses);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_statuses>("statuses", Statuses);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

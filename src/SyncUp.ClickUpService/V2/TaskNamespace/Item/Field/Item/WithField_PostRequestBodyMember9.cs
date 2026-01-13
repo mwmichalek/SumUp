@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item
 {
     /// <summary>
     /// Enter an array of task ids in the `add` property to add them to a Task Relationship Custom Field. Enter them into the `rem` property to remove tasks from the Relationship.
@@ -18,13 +18,13 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         /// <summary>The value property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value? Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value? Value { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value Value { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value Value { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9"/> and sets the default values.
         /// </summary>
         public WithField_PostRequestBodyMember9()
         {
@@ -33,12 +33,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9 CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9 CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -48,7 +48,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "value", n => { Value = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value>(global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value.CreateFromDiscriminatorValue); } },
+                { "value", n => { Value = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -58,7 +58,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value>("value", Value);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember9_value>("value", Value);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

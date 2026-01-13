@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.Field
+namespace SyncUp.ClickUp.Api.V2.List.Item.Field
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -37,20 +37,20 @@ namespace ClickUp.Api.V2.List.Item.Field
         /// <summary>The default property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default? Default { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default? Default { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default Default { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default Default { get; set; }
 #endif
         /// <summary>The end property</summary>
         public int? End { get; set; }
         /// <summary>The options property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>? Options { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>? Options { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options> Options { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options> Options { get; set; }
 #endif
         /// <summary>The placeholder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -67,13 +67,13 @@ namespace ClickUp.Api.V2.List.Item.Field
         /// <summary>The tracking property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking? Tracking { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking? Tracking { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking Tracking { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking Tracking { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config"/> and sets the default values.
         /// </summary>
         public FieldGetResponse_fields_type_config()
         {
@@ -82,12 +82,12 @@ namespace ClickUp.Api.V2.List.Item.Field
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -101,13 +101,13 @@ namespace ClickUp.Api.V2.List.Item.Field
                 { "complete_on", n => { CompleteOn = n.GetIntValue(); } },
                 { "count", n => { Count = n.GetIntValue(); } },
                 { "currency_type", n => { CurrencyType = n.GetStringValue(); } },
-                { "default", n => { Default = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default>(global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default.CreateFromDiscriminatorValue); } },
+                { "default", n => { Default = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default>(global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default.CreateFromDiscriminatorValue); } },
                 { "end", n => { End = n.GetIntValue(); } },
-                { "options", n => { Options = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>(global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "options", n => { Options = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>(global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "placeholder", n => { Placeholder = n.GetStringValue(); } },
                 { "precision", n => { Precision = n.GetIntValue(); } },
                 { "start", n => { Start = n.GetIntValue(); } },
-                { "tracking", n => { Tracking = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking>(global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking.CreateFromDiscriminatorValue); } },
+                { "tracking", n => { Tracking = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking>(global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -121,28 +121,28 @@ namespace ClickUp.Api.V2.List.Item.Field
             writer.WriteIntValue("complete_on", CompleteOn);
             writer.WriteIntValue("count", Count);
             writer.WriteStringValue("currency_type", CurrencyType);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default>("default", Default);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default>("default", Default);
             writer.WriteIntValue("end", End);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>("options", Options);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_options>("options", Options);
             writer.WriteStringValue("placeholder", Placeholder);
             writer.WriteIntValue("precision", Precision);
             writer.WriteIntValue("start", Start);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking>("tracking", Tracking);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_tracking>("tracking", Tracking);
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1"/>, <see cref="int"/>, <see cref="string"/>
+        /// Composed type wrapper for classes <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1"/>, <see cref="int"/>, <see cref="string"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class FieldGetResponse_fields_type_config_default : IComposedTypeWrapper, IParsable
         {
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1? FieldGetResponseFieldsTypeConfigDefaultMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1? FieldGetResponseFieldsTypeConfigDefaultMember1 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1 FieldGetResponseFieldsTypeConfigDefaultMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1 FieldGetResponseFieldsTypeConfigDefaultMember1 { get; set; }
 #endif
             /// <summary>Composed type representation for type <see cref="int"/></summary>
             public int? Integer { get; set; }
@@ -157,16 +157,16 @@ namespace ClickUp.Api.V2.List.Item.Field
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default();
+                var result = new global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config.FieldGetResponse_fields_type_config_default();
                 if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.FieldGetResponseFieldsTypeConfigDefaultMember1 = new global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1();
+                    result.FieldGetResponseFieldsTypeConfigDefaultMember1 = new global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1();
                 }
                 else if(parseNode.GetIntValue() is int integerValue)
                 {
@@ -199,7 +199,7 @@ namespace ClickUp.Api.V2.List.Item.Field
                 if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
                 if(FieldGetResponseFieldsTypeConfigDefaultMember1 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1>(null, FieldGetResponseFieldsTypeConfigDefaultMember1);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.Field.FieldGetResponse_fields_type_config_defaultMember1>(null, FieldGetResponseFieldsTypeConfigDefaultMember1);
                 }
                 else if(Integer != null)
                 {

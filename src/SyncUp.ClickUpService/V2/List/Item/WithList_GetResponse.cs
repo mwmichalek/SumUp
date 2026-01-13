@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item
+namespace SyncUp.ClickUp.Api.V2.List.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -45,10 +45,10 @@ namespace ClickUp.Api.V2.List.Item
         /// <summary>The folder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_folder? Folder { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_folder? Folder { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_folder Folder { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_folder Folder { get; set; }
 #endif
         /// <summary>The id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -89,18 +89,18 @@ namespace ClickUp.Api.V2.List.Item
         /// <summary>The priority property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_priority? Priority { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_priority? Priority { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_priority Priority { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_priority Priority { get; set; }
 #endif
         /// <summary>The space property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_space? Space { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_space? Space { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_space Space { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_space Space { get; set; }
 #endif
         /// <summary>The start_date property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -121,10 +121,10 @@ namespace ClickUp.Api.V2.List.Item
         /// <summary>The status property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_status? Status { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_status? Status { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.List.Item.WithList_GetResponse_status Status { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_status Status { get; set; }
 #endif
         /// <summary>The statuses property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -143,7 +143,7 @@ namespace ClickUp.Api.V2.List.Item
         public string TaskCount { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.WithList_GetResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse"/> and sets the default values.
         /// </summary>
         public WithList_GetResponse()
         {
@@ -152,12 +152,12 @@ namespace ClickUp.Api.V2.List.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.WithList_GetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.WithList_GetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.WithList_GetResponse();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -172,18 +172,18 @@ namespace ClickUp.Api.V2.List.Item
                 { "content", n => { Content = n.GetStringValue(); } },
                 { "due_date", n => { DueDate = n.GetStringValue(); } },
                 { "due_date_time", n => { DueDateTime = n.GetBoolValue(); } },
-                { "folder", n => { Folder = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_folder>(global::ClickUp.Api.V2.List.Item.WithList_GetResponse_folder.CreateFromDiscriminatorValue); } },
+                { "folder", n => { Folder = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_folder>(global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_folder.CreateFromDiscriminatorValue); } },
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "inbound_address", n => { InboundAddress = n.GetStringValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "orderindex", n => { Orderindex = n.GetIntValue(); } },
                 { "override_statuses", n => { OverrideStatuses = n.GetBoolValue(); } },
                 { "permission_level", n => { PermissionLevel = n.GetStringValue(); } },
-                { "priority", n => { Priority = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_priority>(global::ClickUp.Api.V2.List.Item.WithList_GetResponse_priority.CreateFromDiscriminatorValue); } },
-                { "space", n => { Space = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_space>(global::ClickUp.Api.V2.List.Item.WithList_GetResponse_space.CreateFromDiscriminatorValue); } },
+                { "priority", n => { Priority = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_priority>(global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_priority.CreateFromDiscriminatorValue); } },
+                { "space", n => { Space = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_space>(global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_space.CreateFromDiscriminatorValue); } },
                 { "start_date", n => { StartDate = n.GetStringValue(); } },
                 { "start_date_time", n => { StartDateTime = n.GetStringValue(); } },
-                { "status", n => { Status = n.GetObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_status>(global::ClickUp.Api.V2.List.Item.WithList_GetResponse_status.CreateFromDiscriminatorValue); } },
+                { "status", n => { Status = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_status>(global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_status.CreateFromDiscriminatorValue); } },
                 { "statuses", n => { Statuses = n.GetCollectionOfPrimitiveValues<UntypedNode>()?.AsList(); } },
                 { "task_count", n => { TaskCount = n.GetStringValue(); } },
             };
@@ -200,18 +200,18 @@ namespace ClickUp.Api.V2.List.Item
             writer.WriteStringValue("content", Content);
             writer.WriteStringValue("due_date", DueDate);
             writer.WriteBoolValue("due_date_time", DueDateTime);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_folder>("folder", Folder);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_folder>("folder", Folder);
             writer.WriteStringValue("id", Id);
             writer.WriteStringValue("inbound_address", InboundAddress);
             writer.WriteStringValue("name", Name);
             writer.WriteIntValue("orderindex", Orderindex);
             writer.WriteBoolValue("override_statuses", OverrideStatuses);
             writer.WriteStringValue("permission_level", PermissionLevel);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_priority>("priority", Priority);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_space>("space", Space);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_priority>("priority", Priority);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_space>("space", Space);
             writer.WriteStringValue("start_date", StartDate);
             writer.WriteStringValue("start_date_time", StartDateTime);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.WithList_GetResponse_status>("status", Status);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.WithList_GetResponse_status>("status", Status);
             writer.WriteCollectionOfPrimitiveValues<UntypedNode>("statuses", Statuses);
             writer.WriteStringValue("task_count", TaskCount);
             writer.WriteAdditionalData(AdditionalData);

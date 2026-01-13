@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -43,10 +43,10 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>The custom_fields property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>? CustomFields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>? CustomFields { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields> CustomFields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields> CustomFields { get; set; }
 #endif
         /// <summary>The custom_id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -229,7 +229,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         public string Url { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse"/> and sets the default values.
         /// </summary>
         public WithTask_PutResponse()
         {
@@ -238,12 +238,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -257,7 +257,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
                 { "assignees", n => { Assignees = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
                 { "checklists", n => { Checklists = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
                 { "creator", n => { Creator = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "custom_fields", n => { CustomFields = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>(global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "custom_fields", n => { CustomFields = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "custom_id", n => { CustomId = n.GetStringValue(); } },
                 { "custom_item_id", n => { CustomItemId = n.GetDoubleValue(); } },
                 { "date_closed", n => { DateClosed = n.GetStringValue(); } },
@@ -295,7 +295,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item
             writer.WriteCollectionOfPrimitiveValues<string>("assignees", Assignees);
             writer.WriteCollectionOfPrimitiveValues<string>("checklists", Checklists);
             writer.WriteObjectValue<UntypedNode>("creator", Creator);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>("custom_fields", CustomFields);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.WithTask_PutResponse_custom_fields>("custom_fields", CustomFields);
             writer.WriteStringValue("custom_id", CustomId);
             writer.WriteDoubleValue("custom_item_id", CustomItemId);
             writer.WriteStringValue("date_closed", DateClosed);

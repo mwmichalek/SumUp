@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Oauth.Token
+namespace SyncUp.ClickUp.Api.V2.Oauth.Token
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\oauth\token
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Oauth.Token
     public partial class TokenRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Oauth.Token
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,43 +35,43 @@ namespace ClickUp.Api.V2.Oauth.Token
         /// <summary>
         /// These are the routes for authing the API and going through the [OAuth flow](doc:authentication).\ \Applications utilizing a personal API token don&apos;t use this endpoint.\ \***Note:** OAuth tokens are not supported when using the [**Try It** feature](doc:trytheapi) of our Reference docs. You can&apos;t try this endpoint from your web browser.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Oauth.Token.TokenPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Oauth.Token.TokenPostResponse?> PostAsTokenPostResponseAsync(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostResponse?> PostAsTokenPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Oauth.Token.TokenPostResponse> PostAsTokenPostResponseAsync(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostResponse> PostAsTokenPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Oauth.Token.TokenPostResponse>(requestInfo, global::ClickUp.Api.V2.Oauth.Token.TokenPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// These are the routes for authing the API and going through the [OAuth flow](doc:authentication).\ \Applications utilizing a personal API token don&apos;t use this endpoint.\ \***Note:** OAuth tokens are not supported when using the [**Try It** feature](doc:trytheapi) of our Reference docs. You can&apos;t try this endpoint from your web browser.*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Oauth.Token.TokenResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsTokenPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Oauth.Token.TokenResponse?> PostAsync(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Oauth.Token.TokenResponse> PostAsync(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Oauth.Token.TokenResponse>(requestInfo, global::ClickUp.Api.V2.Oauth.Token.TokenResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// These are the routes for authing the API and going through the [OAuth flow](doc:authentication).\ \Applications utilizing a personal API token don&apos;t use this endpoint.\ \***Note:** OAuth tokens are not supported when using the [**Try It** feature](doc:trytheapi) of our Reference docs. You can&apos;t try this endpoint from your web browser.*
@@ -81,11 +81,11 @@ namespace ClickUp.Api.V2.Oauth.Token
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -98,11 +98,11 @@ namespace ClickUp.Api.V2.Oauth.Token
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Oauth.Token.TokenRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

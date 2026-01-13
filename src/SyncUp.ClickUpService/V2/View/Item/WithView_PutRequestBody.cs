@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,34 +17,34 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>Custom Fields added to a view at the Everything level will be added to all tasks in your Workspace. Once Custom Fields are added to one of these views, you cannot move it to another level of the Hierarchy.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns? Columns { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns? Columns { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns Columns { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns Columns { get; set; }
 #endif
         /// <summary>The divide property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide? Divide { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide? Divide { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide Divide { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide Divide { get; set; }
 #endif
         /// <summary>The filters property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters? Filters { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters? Filters { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters Filters { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters Filters { get; set; }
 #endif
         /// <summary>The grouping property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping? Grouping { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping? Grouping { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping Grouping { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping Grouping { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -57,34 +57,34 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>The parent parameter specifies where the view is located in the ClickUp Hierarchy. Both `id` and `type` are required. \ \The `id` is the id of the Workspace, Space, Folder, or List where the view is located. \ \The `type` value indciates the level of the Hierarchy where the view is located.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent? Parent { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent? Parent { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent Parent { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent Parent { get; set; }
 #endif
         /// <summary>The settings property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings? Settings { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings? Settings { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings Settings { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings Settings { get; set; }
 #endif
         /// <summary>The sorting property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting? Sorting { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting? Sorting { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting Sorting { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting Sorting { get; set; }
 #endif
         /// <summary>The team_sidebar property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar? TeamSidebar { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar? TeamSidebar { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar TeamSidebar { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar TeamSidebar { get; set; }
 #endif
         /// <summary>The type property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -95,7 +95,7 @@ namespace ClickUp.Api.V2.View.Item
         public string Type { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody"/> and sets the default values.
         /// </summary>
         public WithView_PutRequestBody()
         {
@@ -104,12 +104,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -119,15 +119,15 @@ namespace ClickUp.Api.V2.View.Item
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "columns", n => { Columns = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns.CreateFromDiscriminatorValue); } },
-                { "divide", n => { Divide = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide.CreateFromDiscriminatorValue); } },
-                { "filters", n => { Filters = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters.CreateFromDiscriminatorValue); } },
-                { "grouping", n => { Grouping = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping.CreateFromDiscriminatorValue); } },
+                { "columns", n => { Columns = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns.CreateFromDiscriminatorValue); } },
+                { "divide", n => { Divide = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide.CreateFromDiscriminatorValue); } },
+                { "filters", n => { Filters = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters.CreateFromDiscriminatorValue); } },
+                { "grouping", n => { Grouping = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping.CreateFromDiscriminatorValue); } },
                 { "name", n => { Name = n.GetStringValue(); } },
-                { "parent", n => { Parent = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent.CreateFromDiscriminatorValue); } },
-                { "settings", n => { Settings = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings.CreateFromDiscriminatorValue); } },
-                { "sorting", n => { Sorting = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting.CreateFromDiscriminatorValue); } },
-                { "team_sidebar", n => { TeamSidebar = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar>(global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar.CreateFromDiscriminatorValue); } },
+                { "parent", n => { Parent = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent.CreateFromDiscriminatorValue); } },
+                { "settings", n => { Settings = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings.CreateFromDiscriminatorValue); } },
+                { "sorting", n => { Sorting = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting.CreateFromDiscriminatorValue); } },
+                { "team_sidebar", n => { TeamSidebar = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar.CreateFromDiscriminatorValue); } },
                 { "type", n => { Type = n.GetStringValue(); } },
             };
         }
@@ -138,15 +138,15 @@ namespace ClickUp.Api.V2.View.Item
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns>("columns", Columns);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide>("divide", Divide);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters>("filters", Filters);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping>("grouping", Grouping);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_columns>("columns", Columns);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_divide>("divide", Divide);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_filters>("filters", Filters);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_grouping>("grouping", Grouping);
             writer.WriteStringValue("name", Name);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent>("parent", Parent);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings>("settings", Settings);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting>("sorting", Sorting);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar>("team_sidebar", TeamSidebar);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent>("parent", Parent);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_settings>("settings", Settings);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_sorting>("sorting", Sorting);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_team_sidebar>("team_sidebar", TeamSidebar);
             writer.WriteStringValue("type", Type);
             writer.WriteAdditionalData(AdditionalData);
         }

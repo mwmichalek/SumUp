@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team
+namespace SyncUp.ClickUp.Api.V2.Team
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,13 +17,13 @@ namespace ClickUp.Api.V2.Team
         /// <summary>The teams property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.TeamGetResponse_teams>? Teams { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams>? Teams { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.TeamGetResponse_teams> Teams { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams> Teams { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.TeamGetResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse"/> and sets the default values.
         /// </summary>
         public TeamGetResponse()
         {
@@ -32,12 +32,12 @@ namespace ClickUp.Api.V2.Team
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.TeamGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.TeamGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.TeamGetResponse();
+            return new global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,7 +47,7 @@ namespace ClickUp.Api.V2.Team
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "teams", n => { Teams = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.TeamGetResponse_teams>(global::ClickUp.Api.V2.Team.TeamGetResponse_teams.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "teams", n => { Teams = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams>(global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams.CreateFromDiscriminatorValue)?.AsList(); } },
             };
         }
         /// <summary>
@@ -57,7 +57,7 @@ namespace ClickUp.Api.V2.Team
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.TeamGetResponse_teams>("teams", Teams);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams>("teams", Teams);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

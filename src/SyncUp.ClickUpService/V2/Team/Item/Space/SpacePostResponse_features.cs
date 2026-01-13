@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Space
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Space
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -33,10 +33,10 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The custom_items property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items? CustomItems { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items? CustomItems { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items CustomItems { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items CustomItems { get; set; }
 #endif
         /// <summary>The dependency_warning property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -57,34 +57,34 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The emails property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails? Emails { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails? Emails { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails Emails { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails Emails { get; set; }
 #endif
         /// <summary>The milestones property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones? Milestones { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones? Milestones { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones Milestones { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones Milestones { get; set; }
 #endif
         /// <summary>The multiple_assignees property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees? MultipleAssignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees? MultipleAssignees { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees MultipleAssignees { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees MultipleAssignees { get; set; }
 #endif
         /// <summary>The points property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points? Points { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points? Points { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points Points { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points Points { get; set; }
 #endif
         /// <summary>The portfolios property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -105,10 +105,10 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The sprints property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints? Sprints { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints? Sprints { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints Sprints { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints Sprints { get; set; }
 #endif
         /// <summary>The tags property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -129,13 +129,13 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>The zoom property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom? Zoom { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom? Zoom { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom Zoom { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom Zoom { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features"/> and sets the default values.
         /// </summary>
         public SpacePostResponse_features()
         {
@@ -144,12 +144,12 @@ namespace ClickUp.Api.V2.Team.Item.Space
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -161,19 +161,19 @@ namespace ClickUp.Api.V2.Team.Item.Space
             {
                 { "checklists", n => { Checklists = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "custom_fields", n => { CustomFields = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "custom_items", n => { CustomItems = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items.CreateFromDiscriminatorValue); } },
+                { "custom_items", n => { CustomItems = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items.CreateFromDiscriminatorValue); } },
                 { "dependency_warning", n => { DependencyWarning = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "due_dates", n => { DueDates = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "emails", n => { Emails = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails.CreateFromDiscriminatorValue); } },
-                { "milestones", n => { Milestones = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones.CreateFromDiscriminatorValue); } },
-                { "multiple_assignees", n => { MultipleAssignees = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees.CreateFromDiscriminatorValue); } },
-                { "points", n => { Points = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points.CreateFromDiscriminatorValue); } },
+                { "emails", n => { Emails = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails.CreateFromDiscriminatorValue); } },
+                { "milestones", n => { Milestones = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones.CreateFromDiscriminatorValue); } },
+                { "multiple_assignees", n => { MultipleAssignees = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees.CreateFromDiscriminatorValue); } },
+                { "points", n => { Points = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points.CreateFromDiscriminatorValue); } },
                 { "portfolios", n => { Portfolios = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "remap_dependencies", n => { RemapDependencies = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "sprints", n => { Sprints = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints.CreateFromDiscriminatorValue); } },
+                { "sprints", n => { Sprints = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints.CreateFromDiscriminatorValue); } },
                 { "tags", n => { Tags = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "time_estimates", n => { TimeEstimates = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "zoom", n => { Zoom = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom>(global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom.CreateFromDiscriminatorValue); } },
+                { "zoom", n => { Zoom = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom>(global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -185,19 +185,19 @@ namespace ClickUp.Api.V2.Team.Item.Space
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteObjectValue<UntypedNode>("checklists", Checklists);
             writer.WriteObjectValue<UntypedNode>("custom_fields", CustomFields);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items>("custom_items", CustomItems);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_custom_items>("custom_items", CustomItems);
             writer.WriteObjectValue<UntypedNode>("dependency_warning", DependencyWarning);
             writer.WriteObjectValue<UntypedNode>("due_dates", DueDates);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails>("emails", Emails);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones>("milestones", Milestones);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees>("multiple_assignees", MultipleAssignees);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points>("points", Points);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_emails>("emails", Emails);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_milestones>("milestones", Milestones);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_multiple_assignees>("multiple_assignees", MultipleAssignees);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_points>("points", Points);
             writer.WriteObjectValue<UntypedNode>("portfolios", Portfolios);
             writer.WriteObjectValue<UntypedNode>("remap_dependencies", RemapDependencies);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints>("sprints", Sprints);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_sprints>("sprints", Sprints);
             writer.WriteObjectValue<UntypedNode>("tags", Tags);
             writer.WriteObjectValue<UntypedNode>("time_estimates", TimeEstimates);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom>("zoom", Zoom);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Space.SpacePostResponse_features_zoom>("zoom", Zoom);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

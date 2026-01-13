@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Key_result.Item
+namespace SyncUp.ClickUp.Api.V2.Key_result.Item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\key_result\{key_result_id}
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Key_result.Item
     public partial class WithKey_result_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Key_result.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,80 +35,80 @@ namespace ClickUp.Api.V2.Key_result.Item
         /// <summary>
         /// Delete a target from a Goal.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse?> DeleteAsWithKey_result_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse?> DeleteAsWithKey_result_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse> DeleteAsWithKey_result_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse> DeleteAsWithKey_result_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse>(requestInfo, global::ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Delete a target from a Goal.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsWithKey_result_DeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response>(requestInfo, global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Update a Target.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse?> PutAsWithKey_result_PutResponseAsync(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse?> PutAsWithKey_result_PutResponseAsync(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse> PutAsWithKey_result_PutResponseAsync(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse> PutAsWithKey_result_PutResponseAsync(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse>(requestInfo, global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Update a Target.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PutAsWithKey_result_PutResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response?> PutAsync(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response?> PutAsync(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response> PutAsync(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response> PutAsync(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response>(requestInfo, global::ClickUp.Api.V2.Key_result.Item.WithKey_result_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Delete a target from a Goal.
@@ -137,11 +137,11 @@ namespace ClickUp.Api.V2.Key_result.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -154,11 +154,11 @@ namespace ClickUp.Api.V2.Key_result.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\task\bulk_time_in_status\task_ids
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
     public partial class Task_idsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,39 +35,39 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
         /// <summary>
         /// View how long two or more tasks have been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse?> GetAsTask_idsGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse?> GetAsTask_idsGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse> GetAsTask_idsGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse> GetAsTask_idsGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View how long two or more tasks have been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsTask_idsGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View how long two or more tasks have been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
@@ -76,11 +76,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -91,11 +91,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// View how long two or more tasks have been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
@@ -125,7 +125,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class Task_idsRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>
+        public partial class Task_idsRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Bulk_time_in_status.Task_ids.Task_idsRequestBuilder.Task_idsRequestBuilderGetQueryParameters>
         {
         }
     }

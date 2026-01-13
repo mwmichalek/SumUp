@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,13 +17,13 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>The view property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view? View { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view? View { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view View { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view View { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2"/> and sets the default values.
         /// </summary>
         public WithView_GetResponseMember2()
         {
@@ -32,12 +32,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2 CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2 CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,7 +47,7 @@ namespace ClickUp.Api.V2.View.Item
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "view", n => { View = n.GetObjectValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view>(global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view.CreateFromDiscriminatorValue); } },
+                { "view", n => { View = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view>(global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -57,7 +57,7 @@ namespace ClickUp.Api.V2.View.Item
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view>("view", View);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.View.Item.WithView_GetResponseMember2_view>("view", View);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

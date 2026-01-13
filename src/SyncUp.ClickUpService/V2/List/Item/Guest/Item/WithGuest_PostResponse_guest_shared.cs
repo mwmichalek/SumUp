@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.Guest.Item
+namespace SyncUp.ClickUp.Api.V2.List.Item.Guest.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -25,10 +25,10 @@ namespace ClickUp.Api.V2.List.Item.Guest.Item
         /// <summary>The lists property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>? Lists { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>? Lists { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists> Lists { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists> Lists { get; set; }
 #endif
         /// <summary>The tasks property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -39,7 +39,7 @@ namespace ClickUp.Api.V2.List.Item.Guest.Item
         public List<string> Tasks { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared"/> and sets the default values.
         /// </summary>
         public WithGuest_PostResponse_guest_shared()
         {
@@ -48,12 +48,12 @@ namespace ClickUp.Api.V2.List.Item.Guest.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -64,7 +64,7 @@ namespace ClickUp.Api.V2.List.Item.Guest.Item
             return new Dictionary<string, Action<IParseNode>>
             {
                 { "folders", n => { Folders = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
-                { "lists", n => { Lists = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>(global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "lists", n => { Lists = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>(global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "tasks", n => { Tasks = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
             };
         }
@@ -76,7 +76,7 @@ namespace ClickUp.Api.V2.List.Item.Guest.Item
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteCollectionOfPrimitiveValues<string>("folders", Folders);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>("lists", Lists);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.Guest.Item.WithGuest_PostResponse_guest_shared_lists>("lists", Lists);
             writer.WriteCollectionOfPrimitiveValues<string>("tasks", Tasks);
             writer.WriteAdditionalData(AdditionalData);
         }

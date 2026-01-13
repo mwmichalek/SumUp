@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Diagnostics;
-using ClickUp.Api;
-using ClickUp.Api.V2.TaskNamespace.Item;
+using SyncUp.ClickUp.Api;
+using SyncUp.ClickUp.Api.V2.TaskNamespace.Item;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Kiota.Abstractions.Authentication;
 using Microsoft.Kiota.Abstractions.Serialization;

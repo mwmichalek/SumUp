@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Group.Item
+namespace SyncUp.ClickUp.Api.V2.Group.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,10 +17,10 @@ namespace ClickUp.Api.V2.Group.Item
         /// <summary>The avatar property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar? Avatar { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar? Avatar { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar Avatar { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar Avatar { get; set; }
 #endif
         /// <summary>The date_created property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -57,10 +57,10 @@ namespace ClickUp.Api.V2.Group.Item
         /// <summary>The members property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>? Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>? Members { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members> Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members> Members { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -81,7 +81,7 @@ namespace ClickUp.Api.V2.Group.Item
         /// <summary>The userid property</summary>
         public int? Userid { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse"/> and sets the default values.
         /// </summary>
         public WithGroup_PutResponse()
         {
@@ -90,12 +90,12 @@ namespace ClickUp.Api.V2.Group.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse();
+            return new global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -105,12 +105,12 @@ namespace ClickUp.Api.V2.Group.Item
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "avatar", n => { Avatar = n.GetObjectValue<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar>(global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar.CreateFromDiscriminatorValue); } },
+                { "avatar", n => { Avatar = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar>(global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar.CreateFromDiscriminatorValue); } },
                 { "date_created", n => { DateCreated = n.GetStringValue(); } },
                 { "handle", n => { Handle = n.GetStringValue(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "initials", n => { Initials = n.GetStringValue(); } },
-                { "members", n => { Members = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>(global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "members", n => { Members = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>(global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "team_id", n => { TeamId = n.GetStringValue(); } },
                 { "userid", n => { Userid = n.GetIntValue(); } },
@@ -123,12 +123,12 @@ namespace ClickUp.Api.V2.Group.Item
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar>("avatar", Avatar);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_avatar>("avatar", Avatar);
             writer.WriteStringValue("date_created", DateCreated);
             writer.WriteStringValue("handle", Handle);
             writer.WriteStringValue("id", Id);
             writer.WriteStringValue("initials", Initials);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>("members", Members);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Group.Item.WithGroup_PutResponse_members>("members", Members);
             writer.WriteStringValue("name", Name);
             writer.WriteStringValue("team_id", TeamId);
             writer.WriteIntValue("userid", Userid);

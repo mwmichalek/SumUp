@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Webhook
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Webhook
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -23,7 +23,7 @@ namespace ClickUp.Api.V2.Team.Item.Webhook
         public List<UntypedNode> Webhooks { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse"/> and sets the default values.
         /// </summary>
         public WebhookGetResponse()
         {
@@ -32,12 +32,12 @@ namespace ClickUp.Api.V2.Team.Item.Webhook
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse();
         }
         /// <summary>
         /// The deserialization information for the current model

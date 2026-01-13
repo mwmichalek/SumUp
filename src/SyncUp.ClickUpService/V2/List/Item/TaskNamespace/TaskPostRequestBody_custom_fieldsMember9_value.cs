@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.TaskNamespace
+namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -31,7 +31,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         public List<string> Rem { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value"/> and sets the default values.
         /// </summary>
         public TaskPostRequestBody_custom_fieldsMember9_value()
         {
@@ -40,12 +40,12 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9_value();
         }
         /// <summary>
         /// The deserialization information for the current model

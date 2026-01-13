@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Comment
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,13 +17,13 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Comment
         /// <summary>The comments property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>? Comments { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>? Comments { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments> Comments { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments> Comments { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse"/> and sets the default values.
         /// </summary>
         public CommentGetResponse()
         {
@@ -32,12 +32,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Comment
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,7 +47,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Comment
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "comments", n => { Comments = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>(global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "comments", n => { Comments = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments.CreateFromDiscriminatorValue)?.AsList(); } },
             };
         }
         /// <summary>
@@ -57,7 +57,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Comment
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>("comments", Comments);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Comment.CommentGetResponse_comments>("comments", Comments);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.View.Item.TaskNamespace
+namespace SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\view\{view_id}\task
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
     public partial class TaskRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,39 +35,39 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
         /// <summary>
         /// See all visible tasks in a view in ClickUp.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse?> GetAsTaskGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse?> GetAsTaskGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse> GetAsTaskGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse> GetAsTaskGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse>(requestInfo, global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// See all visible tasks in a view in ClickUp.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsTaskGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse>(requestInfo, global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// See all visible tasks in a view in ClickUp.
@@ -76,11 +76,11 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -91,11 +91,11 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// See all visible tasks in a view in ClickUp.
@@ -111,7 +111,7 @@ namespace ClickUp.Api.V2.View.Item.TaskNamespace
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class TaskRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>
+        public partial class TaskRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.View.Item.TaskNamespace.TaskRequestBuilder.TaskRequestBuilderGetQueryParameters>
         {
         }
     }

@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\task\{task_id}\time_in_status
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
     public partial class Time_in_statusRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,39 +35,39 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
         /// <summary>
         /// View how long a task has been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse?> GetAsTime_in_statusGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse?> GetAsTime_in_statusGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse> GetAsTime_in_statusGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse> GetAsTime_in_statusGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View how long a task has been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsTime_in_statusGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse>(requestInfo, global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View how long a task has been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
@@ -76,11 +76,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -91,11 +91,11 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// View how long a task has been in each status. The Total time in Status ClickApp must first be enabled by the Workspace owner or an admin.
@@ -115,7 +115,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time_in_status
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class Time_in_statusRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>
+        public partial class Time_in_statusRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time_in_status.Time_in_statusRequestBuilder.Time_in_statusRequestBuilderGetQueryParameters>
         {
         }
     }

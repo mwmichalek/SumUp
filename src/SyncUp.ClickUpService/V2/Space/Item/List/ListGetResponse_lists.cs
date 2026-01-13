@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item.List
+namespace SyncUp.ClickUp.Api.V2.Space.Item.List
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -79,10 +79,10 @@ namespace ClickUp.Api.V2.Space.Item.List
         /// <summary>The priority property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority? Priority { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority? Priority { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority Priority { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority Priority { get; set; }
 #endif
         /// <summary>The space property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -103,10 +103,10 @@ namespace ClickUp.Api.V2.Space.Item.List
         /// <summary>The status property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status? Status { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status? Status { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status Status { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status Status { get; set; }
 #endif
         /// <summary>The task_count property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -117,7 +117,7 @@ namespace ClickUp.Api.V2.Space.Item.List
         public string TaskCount { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists"/> and sets the default values.
         /// </summary>
         public ListGetResponse_lists()
         {
@@ -126,12 +126,12 @@ namespace ClickUp.Api.V2.Space.Item.List
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -151,10 +151,10 @@ namespace ClickUp.Api.V2.Space.Item.List
                 { "orderindex", n => { Orderindex = n.GetIntValue(); } },
                 { "override_statuses", n => { OverrideStatuses = n.GetBoolValue(); } },
                 { "permission_level", n => { PermissionLevel = n.GetStringValue(); } },
-                { "priority", n => { Priority = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority>(global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority.CreateFromDiscriminatorValue); } },
+                { "priority", n => { Priority = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority>(global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority.CreateFromDiscriminatorValue); } },
                 { "space", n => { Space = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "start_date", n => { StartDate = n.GetStringValue(); } },
-                { "status", n => { Status = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status>(global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status.CreateFromDiscriminatorValue); } },
+                { "status", n => { Status = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status>(global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status.CreateFromDiscriminatorValue); } },
                 { "task_count", n => { TaskCount = n.GetStringValue(); } },
             };
         }
@@ -175,34 +175,34 @@ namespace ClickUp.Api.V2.Space.Item.List
             writer.WriteIntValue("orderindex", Orderindex);
             writer.WriteBoolValue("override_statuses", OverrideStatuses);
             writer.WriteStringValue("permission_level", PermissionLevel);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority>("priority", Priority);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority>("priority", Priority);
             writer.WriteObjectValue<UntypedNode>("space", Space);
             writer.WriteStringValue("start_date", StartDate);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status>("status", Status);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status>("status", Status);
             writer.WriteStringValue("task_count", TaskCount);
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1"/>, <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2"/>, <see cref="string"/>
+        /// Composed type wrapper for classes <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1"/>, <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2"/>, <see cref="string"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class ListGetResponse_lists_priority : IComposedTypeWrapper, IParsable
         {
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1? ListGetResponseListsPriorityMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1? ListGetResponseListsPriorityMember1 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1 ListGetResponseListsPriorityMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1 ListGetResponseListsPriorityMember1 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2? ListGetResponseListsPriorityMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2? ListGetResponseListsPriorityMember2 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2 ListGetResponseListsPriorityMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2 ListGetResponseListsPriorityMember2 { get; set; }
 #endif
             /// <summary>Composed type representation for type <see cref="string"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -215,20 +215,20 @@ namespace ClickUp.Api.V2.Space.Item.List
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority();
+                var result = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_priority();
                 if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.ListGetResponseListsPriorityMember1 = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1();
+                    result.ListGetResponseListsPriorityMember1 = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1();
                 }
                 else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.ListGetResponseListsPriorityMember2 = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2();
+                    result.ListGetResponseListsPriorityMember2 = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2();
                 }
                 else if(parseNode.GetStringValue() is string stringValue)
                 {
@@ -261,11 +261,11 @@ namespace ClickUp.Api.V2.Space.Item.List
                 if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
                 if(ListGetResponseListsPriorityMember1 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1>(null, ListGetResponseListsPriorityMember1);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember1>(null, ListGetResponseListsPriorityMember1);
                 }
                 else if(ListGetResponseListsPriorityMember2 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2>(null, ListGetResponseListsPriorityMember2);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_priorityMember2>(null, ListGetResponseListsPriorityMember2);
                 }
                 else if(String != null)
                 {
@@ -274,26 +274,26 @@ namespace ClickUp.Api.V2.Space.Item.List
             }
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1"/>, <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2"/>, <see cref="string"/>
+        /// Composed type wrapper for classes <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1"/>, <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2"/>, <see cref="string"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class ListGetResponse_lists_status : IComposedTypeWrapper, IParsable
         {
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1? ListGetResponseListsStatusMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1? ListGetResponseListsStatusMember1 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1 ListGetResponseListsStatusMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1 ListGetResponseListsStatusMember1 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2? ListGetResponseListsStatusMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2? ListGetResponseListsStatusMember2 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2 ListGetResponseListsStatusMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2 ListGetResponseListsStatusMember2 { get; set; }
 #endif
             /// <summary>Composed type representation for type <see cref="string"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -306,20 +306,20 @@ namespace ClickUp.Api.V2.Space.Item.List
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status();
+                var result = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists.ListGetResponse_lists_status();
                 if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.ListGetResponseListsStatusMember1 = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1();
+                    result.ListGetResponseListsStatusMember1 = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1();
                 }
                 else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
-                    result.ListGetResponseListsStatusMember2 = new global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2();
+                    result.ListGetResponseListsStatusMember2 = new global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2();
                 }
                 else if(parseNode.GetStringValue() is string stringValue)
                 {
@@ -352,11 +352,11 @@ namespace ClickUp.Api.V2.Space.Item.List
                 if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
                 if(ListGetResponseListsStatusMember1 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1>(null, ListGetResponseListsStatusMember1);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember1>(null, ListGetResponseListsStatusMember1);
                 }
                 else if(ListGetResponseListsStatusMember2 != null)
                 {
-                    writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2>(null, ListGetResponseListsStatusMember2);
+                    writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.List.ListGetResponse_lists_statusMember2>(null, ListGetResponseListsStatusMember2);
                 }
                 else if(String != null)
                 {

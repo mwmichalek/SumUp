@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Goal
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Goal
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -29,10 +29,10 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         /// <summary>The goals property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>? Goals { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>? Goals { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals> Goals { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals> Goals { get; set; }
 #endif
         /// <summary>The id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -45,10 +45,10 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         /// <summary>The members property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>? Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>? Members { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members> Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members> Members { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -69,7 +69,7 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         public string TeamId { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders"/> and sets the default values.
         /// </summary>
         public GoalGetResponse_folders()
         {
@@ -78,12 +78,12 @@ namespace ClickUp.Api.V2.Team.Item.Goal
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -96,9 +96,9 @@ namespace ClickUp.Api.V2.Team.Item.Goal
                 { "creator", n => { Creator = n.GetIntValue(); } },
                 { "date_created", n => { DateCreated = n.GetStringValue(); } },
                 { "goal_count", n => { GoalCount = n.GetIntValue(); } },
-                { "goals", n => { Goals = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>(global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "goals", n => { Goals = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>(global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "members", n => { Members = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>(global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "members", n => { Members = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>(global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "private", n => { Private = n.GetBoolValue(); } },
                 { "team_id", n => { TeamId = n.GetStringValue(); } },
@@ -114,9 +114,9 @@ namespace ClickUp.Api.V2.Team.Item.Goal
             writer.WriteIntValue("creator", Creator);
             writer.WriteStringValue("date_created", DateCreated);
             writer.WriteIntValue("goal_count", GoalCount);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>("goals", Goals);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_goals>("goals", Goals);
             writer.WriteStringValue("id", Id);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>("members", Members);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.Item.Goal.GoalGetResponse_folders_members>("members", Members);
             writer.WriteStringValue("name", Name);
             writer.WriteBoolValue("private", Private);
             writer.WriteStringValue("team_id", TeamId);

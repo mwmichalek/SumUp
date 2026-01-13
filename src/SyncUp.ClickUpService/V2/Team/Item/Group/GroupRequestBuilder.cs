@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Group
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Group
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\team\{team_-id}\group
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Team.Item.Group
     public partial class GroupRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Team.Item.Group
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,43 +35,43 @@ namespace ClickUp.Api.V2.Team.Item.Group
         /// <summary>
         /// This endpoint creates a [User Group](https://docs.clickup.com/en/articles/4010016-teams-how-to-create-user-groups) within a Workspace.\ \User Groups are used to organize and manage users within a Workspace.\ \In the API documentation, `team_id` refers to the Workspace ID, and `group_id` refers to the User Group ID.\ \**Note:** Adding a guest with view-only permissions to a Team automatically converts them to a paid guest.\ \If no paid guest seats are available, an additional member seat will be added, increasing the number of paid guest seats.\ \This change incurs a prorated charge based on the billing cycle.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Group.GroupPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Group.GroupPostResponse?> PostAsGroupPostResponseAsync(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostResponse?> PostAsGroupPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Group.GroupPostResponse> PostAsGroupPostResponseAsync(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostResponse> PostAsGroupPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Group.GroupPostResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Group.GroupPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// This endpoint creates a [User Group](https://docs.clickup.com/en/articles/4010016-teams-how-to-create-user-groups) within a Workspace.\ \User Groups are used to organize and manage users within a Workspace.\ \In the API documentation, `team_id` refers to the Workspace ID, and `group_id` refers to the User Group ID.\ \**Note:** Adding a guest with view-only permissions to a Team automatically converts them to a paid guest.\ \If no paid guest seats are available, an additional member seat will be added, increasing the number of paid guest seats.\ \This change incurs a prorated charge based on the billing cycle.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Group.GroupResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsGroupPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Group.GroupResponse?> PostAsync(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Group.GroupResponse> PostAsync(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Group.GroupResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Group.GroupResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// This endpoint creates a [User Group](https://docs.clickup.com/en/articles/4010016-teams-how-to-create-user-groups) within a Workspace.\ \User Groups are used to organize and manage users within a Workspace.\ \In the API documentation, `team_id` refers to the Workspace ID, and `group_id` refers to the User Group ID.\ \**Note:** Adding a guest with view-only permissions to a Team automatically converts them to a paid guest.\ \If no paid guest seats are available, an additional member seat will be added, increasing the number of paid guest seats.\ \This change incurs a prorated charge based on the billing cycle.
@@ -81,11 +81,11 @@ namespace ClickUp.Api.V2.Team.Item.Group
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -98,11 +98,11 @@ namespace ClickUp.Api.V2.Team.Item.Group
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Group.GroupRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

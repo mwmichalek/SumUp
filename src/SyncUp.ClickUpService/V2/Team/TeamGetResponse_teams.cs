@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team
+namespace SyncUp.ClickUp.Api.V2.Team
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -41,10 +41,10 @@ namespace ClickUp.Api.V2.Team
         /// <summary>The members property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Team.TeamGetResponse_teams_members>? Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams_members>? Members { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Team.TeamGetResponse_teams_members> Members { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams_members> Members { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -55,7 +55,7 @@ namespace ClickUp.Api.V2.Team
         public string Name { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.TeamGetResponse_teams"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams"/> and sets the default values.
         /// </summary>
         public TeamGetResponse_teams()
         {
@@ -64,12 +64,12 @@ namespace ClickUp.Api.V2.Team
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.TeamGetResponse_teams"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.TeamGetResponse_teams CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.TeamGetResponse_teams();
+            return new global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -82,7 +82,7 @@ namespace ClickUp.Api.V2.Team
                 { "avatar", n => { Avatar = n.GetStringValue(); } },
                 { "color", n => { Color = n.GetStringValue(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "members", n => { Members = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Team.TeamGetResponse_teams_members>(global::ClickUp.Api.V2.Team.TeamGetResponse_teams_members.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "members", n => { Members = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams_members>(global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams_members.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
             };
         }
@@ -96,7 +96,7 @@ namespace ClickUp.Api.V2.Team
             writer.WriteStringValue("avatar", Avatar);
             writer.WriteStringValue("color", Color);
             writer.WriteStringValue("id", Id);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Team.TeamGetResponse_teams_members>("members", Members);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Team.TeamGetResponse_teams_members>("members", Members);
             writer.WriteStringValue("name", Name);
             writer.WriteAdditionalData(AdditionalData);
         }

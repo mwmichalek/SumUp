@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Time
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,23 +17,23 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time
         /// <summary>The intervals property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>? Intervals { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>? Intervals { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals> Intervals { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals> Intervals { get; set; }
 #endif
         /// <summary>The time property</summary>
         public int? Time { get; set; }
         /// <summary>The user property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user? User { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user? User { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user User { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user User { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data"/> and sets the default values.
         /// </summary>
         public TimeGetResponse_data()
         {
@@ -42,12 +42,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -57,9 +57,9 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "intervals", n => { Intervals = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>(global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "intervals", n => { Intervals = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "time", n => { Time = n.GetIntValue(); } },
-                { "user", n => { User = n.GetObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user>(global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user.CreateFromDiscriminatorValue); } },
+                { "user", n => { User = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -69,9 +69,9 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Time
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>("intervals", Intervals);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_intervals>("intervals", Intervals);
             writer.WriteIntValue("time", Time);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user>("user", User);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Time.TimeGetResponse_data_user>("user", User);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

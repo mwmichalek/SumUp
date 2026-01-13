@@ -5,23 +5,23 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Webhook
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Webhook
 {
     [Obsolete("This class is obsolete. Use WebhookGetResponse instead.")]
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
-    public partial class WebhookResponse : global::ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse, IParsable
+    public partial class WebhookResponse : global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookGetResponse, IParsable
     #pragma warning restore CS1591
     {
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static new global::ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static new global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Webhook.WebhookResponse();
         }
     }
 }

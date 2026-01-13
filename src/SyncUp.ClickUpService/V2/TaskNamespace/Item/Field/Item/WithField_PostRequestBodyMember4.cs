@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item
 {
     /// <summary>
     /// The `value` must be a string with a valid country code.
@@ -24,7 +24,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         public string Value { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4"/> and sets the default values.
         /// </summary>
         public WithField_PostRequestBodyMember4()
         {
@@ -33,12 +33,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Field.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4 CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4 CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Field.Item.WithField_PostRequestBodyMember4();
         }
         /// <summary>
         /// The deserialization information for the current model

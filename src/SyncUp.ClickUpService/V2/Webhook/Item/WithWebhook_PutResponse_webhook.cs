@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Webhook.Item
+namespace SyncUp.ClickUp.Api.V2.Webhook.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -49,10 +49,10 @@ namespace ClickUp.Api.V2.Webhook.Item
         /// <summary>The health property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health? Health { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health? Health { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health Health { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health Health { get; set; }
 #endif
         /// <summary>The id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -99,7 +99,7 @@ namespace ClickUp.Api.V2.Webhook.Item
         /// <summary>The userid property</summary>
         public int? Userid { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook"/> and sets the default values.
         /// </summary>
         public WithWebhook_PutResponse_webhook()
         {
@@ -108,12 +108,12 @@ namespace ClickUp.Api.V2.Webhook.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook();
+            return new global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -127,7 +127,7 @@ namespace ClickUp.Api.V2.Webhook.Item
                 { "endpoint", n => { Endpoint = n.GetStringValue(); } },
                 { "events", n => { Events = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
                 { "folder_id", n => { FolderId = n.GetStringValue(); } },
-                { "health", n => { Health = n.GetObjectValue<global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health>(global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health.CreateFromDiscriminatorValue); } },
+                { "health", n => { Health = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health>(global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health.CreateFromDiscriminatorValue); } },
                 { "id", n => { Id = n.GetStringValue(); } },
                 { "list_id", n => { ListId = n.GetStringValue(); } },
                 { "secret", n => { Secret = n.GetStringValue(); } },
@@ -148,7 +148,7 @@ namespace ClickUp.Api.V2.Webhook.Item
             writer.WriteStringValue("endpoint", Endpoint);
             writer.WriteCollectionOfPrimitiveValues<string>("events", Events);
             writer.WriteStringValue("folder_id", FolderId);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health>("health", Health);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Webhook.Item.WithWebhook_PutResponse_webhook_health>("health", Health);
             writer.WriteStringValue("id", Id);
             writer.WriteStringValue("list_id", ListId);
             writer.WriteStringValue("secret", Secret);

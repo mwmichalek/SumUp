@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\team\{team_-id}\time_entries\tags
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
     public partial class TagsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,162 +35,162 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         /// <summary>
         /// Remove labels from time entries. This does not remove the label from a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse?> DeleteAsTagsDeleteResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse?> DeleteAsTagsDeleteResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse> DeleteAsTagsDeleteResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse> DeleteAsTagsDeleteResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToDeleteRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove labels from time entries. This does not remove the label from a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsTagsDeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> DeleteAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> DeleteAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> DeleteAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> DeleteAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToDeleteRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View all the labels that have been applied to time entries in a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse?> GetAsTagsGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse?> GetAsTagsGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse> GetAsTagsGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse> GetAsTagsGetResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View all the labels that have been applied to time entries in a Workspace.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsTagsGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a label to a time entry.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse?> PostAsTagsPostResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse?> PostAsTagsPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse> PostAsTagsPostResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse> PostAsTagsPostResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a label to a time entry.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsTagsPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> PostAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> PostAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Rename an time entry label.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse?> PutAsTagsPutResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse?> PutAsTagsPutResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse> PutAsTagsPutResponseAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse> PutAsTagsPutResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Rename an time entry label.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PutAsTagsPutResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> PutAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse?> PutAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> PutAsync(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse> PutAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Remove labels from time entries. This does not remove the label from a Workspace.
@@ -200,11 +200,11 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToDeleteRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToDeleteRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToDeleteRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsDeleteRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -241,11 +241,11 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -263,11 +263,11 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsPutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -280,11 +280,11 @@ namespace ClickUp.Api.V2.Team.Item.Time_entries.Tags
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Time_entries.Tags.TagsRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.

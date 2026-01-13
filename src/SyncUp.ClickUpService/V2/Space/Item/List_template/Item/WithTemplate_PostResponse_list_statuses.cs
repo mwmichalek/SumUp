@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item.List_template.Item
+namespace SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item
 {
     /// <summary>
     /// Status configuration object
@@ -58,7 +58,7 @@ namespace ClickUp.Api.V2.Space.Item.List_template.Item
         public string Type { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses"/> and sets the default values.
         /// </summary>
         public WithTemplate_PostResponse_list_statuses()
         {
@@ -67,12 +67,12 @@ namespace ClickUp.Api.V2.Space.Item.List_template.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.List_template.Item.WithTemplate_PostResponse_list_statuses();
         }
         /// <summary>
         /// The deserialization information for the current model

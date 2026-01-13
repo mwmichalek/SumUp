@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Key_result.Item
+namespace SyncUp.ClickUp.Api.V2.Key_result.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -53,10 +53,10 @@ namespace ClickUp.Api.V2.Key_result.Item
         /// <summary>The last_action property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action? LastAction { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action? LastAction { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action LastAction { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action LastAction { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -115,7 +115,7 @@ namespace ClickUp.Api.V2.Key_result.Item
         public string Unit { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result"/> and sets the default values.
         /// </summary>
         public WithKey_result_PutResponse_key_result()
         {
@@ -124,12 +124,12 @@ namespace ClickUp.Api.V2.Key_result.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result();
+            return new global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -145,7 +145,7 @@ namespace ClickUp.Api.V2.Key_result.Item
                 { "goal_id", n => { GoalId = n.GetStringValue(); } },
                 { "goal_pretty_id", n => { GoalPrettyId = n.GetStringValue(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "last_action", n => { LastAction = n.GetObjectValue<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action>(global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action.CreateFromDiscriminatorValue); } },
+                { "last_action", n => { LastAction = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action>(global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action.CreateFromDiscriminatorValue); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "owners", n => { Owners = n.GetCollectionOfPrimitiveValues<UntypedNode>()?.AsList(); } },
                 { "percent_completed", n => { PercentCompleted = n.GetStringValue(); } },
@@ -168,7 +168,7 @@ namespace ClickUp.Api.V2.Key_result.Item
             writer.WriteStringValue("goal_id", GoalId);
             writer.WriteStringValue("goal_pretty_id", GoalPrettyId);
             writer.WriteStringValue("id", Id);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action>("last_action", LastAction);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Key_result.Item.WithKey_result_PutResponse_key_result_last_action>("last_action", LastAction);
             writer.WriteStringValue("name", Name);
             writer.WriteCollectionOfPrimitiveValues<UntypedNode>("owners", Owners);
             writer.WriteStringValue("percent_completed", PercentCompleted);

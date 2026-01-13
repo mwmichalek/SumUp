@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.Team.Item.User.Item
+namespace SyncUp.ClickUp.Api.V2.Team.Item.User.Item
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\team\{team_-id}\user\{user_id}
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
     public partial class WithUser_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,117 +35,117 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         /// <summary>
         /// Deactivate a user from a Workspace. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse?> DeleteAsWithUser_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse?> DeleteAsWithUser_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse> DeleteAsWithUser_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse> DeleteAsWithUser_DeleteResponseAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_DeleteResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Deactivate a user from a Workspace. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use DeleteAsWithUser_DeleteResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View information about a user in a Workspace. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse?> GetAsWithUser_GetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse?> GetAsWithUser_GetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse> GetAsWithUser_GetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse> GetAsWithUser_GetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_GetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View information about a user in a Workspace. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsWithUser_GetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Update a user&apos;s name and role. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse?> PutAsWithUser_PutResponseAsync(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse?> PutAsWithUser_PutResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse> PutAsWithUser_PutResponseAsync(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse> PutAsWithUser_PutResponseAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Update a user&apos;s name and role. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PutAsWithUser_PutResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> PutAsync(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response?> PutAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> PutAsync(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response> PutAsync(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response>(requestInfo, global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_Response.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Deactivate a user from a Workspace. \ \***Note:** This endpoint is only available to Workspaces on our [Enterprise Plan](https://clickup.com/pricing).*
@@ -173,11 +173,11 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -193,11 +193,11 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPutRequestInformation(global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -210,11 +210,11 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// Configuration for the request such as headers, query parameters, and middleware options.
@@ -239,7 +239,7 @@ namespace ClickUp.Api.V2.Team.Item.User.Item
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithUser_ItemRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>
+        public partial class WithUser_ItemRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.Team.Item.User.Item.WithUser_ItemRequestBuilder.WithUser_ItemRequestBuilderGetQueryParameters>
         {
         }
         /// <summary>

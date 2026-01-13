@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
+namespace SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -33,10 +33,10 @@ namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
         /// <summary>The items property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>? Items { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>? Items { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items> Items { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items> Items { get; set; }
 #endif
         /// <summary>The name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -61,7 +61,7 @@ namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
         /// <summary>The unresolved property</summary>
         public int? Unresolved { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist"/> and sets the default values.
         /// </summary>
         public Checklist_itemPostResponse_checklist()
         {
@@ -70,12 +70,12 @@ namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist();
+            return new global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -87,7 +87,7 @@ namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
             {
                 { "date_created", n => { DateCreated = n.GetStringValue(); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "items", n => { Items = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>(global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "items", n => { Items = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>(global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "orderindex", n => { Orderindex = n.GetIntValue(); } },
                 { "resolved", n => { Resolved = n.GetIntValue(); } },
@@ -104,7 +104,7 @@ namespace ClickUp.Api.V2.Checklist.Item.Checklist_item
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("date_created", DateCreated);
             writer.WriteStringValue("id", Id);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>("items", Items);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.Checklist.Item.Checklist_item.Checklist_itemPostResponse_checklist_items>("items", Items);
             writer.WriteStringValue("name", Name);
             writer.WriteIntValue("orderindex", Orderindex);
             writer.WriteIntValue("resolved", Resolved);

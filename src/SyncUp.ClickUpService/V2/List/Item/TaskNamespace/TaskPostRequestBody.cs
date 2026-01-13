@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.TaskNamespace
+namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -29,10 +29,10 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>You can include one or more Custom Fields to set them when creating a new task.\ \Custom Fields that use object and array type values are nullable by sending `&quot;value&quot;: null`.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>? CustomFields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>? CustomFields { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields> CustomFields { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields> CustomFields { get; set; }
 #endif
         /// <summary>The custom task type ID for this task. A value of `null` (default) creates a standard task type &quot;Task&quot;.\ \To get a list of available custom task type IDs for your Workspace, use the [Get Custom Task Types endpoint](ref:getcustomitems).</summary>
         public double? CustomItemId { get; set; }
@@ -117,7 +117,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>The time_estimate property</summary>
         public int? TimeEstimate { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody"/> and sets the default values.
         /// </summary>
         public TaskPostRequestBody()
         {
@@ -126,12 +126,12 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -144,7 +144,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
                 { "archived", n => { Archived = n.GetBoolValue(); } },
                 { "assignees", n => { Assignees = n.GetCollectionOfPrimitiveValues<int?>()?.AsList(); } },
                 { "check_required_custom_fields", n => { CheckRequiredCustomFields = n.GetBoolValue(); } },
-                { "custom_fields", n => { CustomFields = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>(global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "custom_fields", n => { CustomFields = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>(global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "custom_item_id", n => { CustomItemId = n.GetDoubleValue(); } },
                 { "description", n => { Description = n.GetStringValue(); } },
                 { "due_date", n => { DueDate = n.GetIntValue(); } },
@@ -174,7 +174,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
             writer.WriteBoolValue("archived", Archived);
             writer.WriteCollectionOfPrimitiveValues<int?>("assignees", Assignees);
             writer.WriteBoolValue("check_required_custom_fields", CheckRequiredCustomFields);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>("custom_fields", CustomFields);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields>("custom_fields", CustomFields);
             writer.WriteDoubleValue("custom_item_id", CustomItemId);
             writer.WriteStringValue("description", Description);
             writer.WriteIntValue("due_date", DueDate);
@@ -195,155 +195,155 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8"/>, <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9"/>
+        /// Composed type wrapper for classes <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8"/>, <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class TaskPostRequestBody_custom_fields : IComposedTypeWrapper, IParsable
         {
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1? TaskPostRequestBodyCustomFieldsMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1? TaskPostRequestBodyCustomFieldsMember1 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1 TaskPostRequestBodyCustomFieldsMember1 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1 TaskPostRequestBodyCustomFieldsMember1 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10? TaskPostRequestBodyCustomFieldsMember10 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10? TaskPostRequestBodyCustomFieldsMember10 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10 TaskPostRequestBodyCustomFieldsMember10 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10 TaskPostRequestBodyCustomFieldsMember10 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11? TaskPostRequestBodyCustomFieldsMember11 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11? TaskPostRequestBodyCustomFieldsMember11 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11 TaskPostRequestBodyCustomFieldsMember11 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11 TaskPostRequestBodyCustomFieldsMember11 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12? TaskPostRequestBodyCustomFieldsMember12 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12? TaskPostRequestBodyCustomFieldsMember12 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12 TaskPostRequestBodyCustomFieldsMember12 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12 TaskPostRequestBodyCustomFieldsMember12 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13? TaskPostRequestBodyCustomFieldsMember13 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13? TaskPostRequestBodyCustomFieldsMember13 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13 TaskPostRequestBodyCustomFieldsMember13 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13 TaskPostRequestBodyCustomFieldsMember13 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14? TaskPostRequestBodyCustomFieldsMember14 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14? TaskPostRequestBodyCustomFieldsMember14 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14 TaskPostRequestBodyCustomFieldsMember14 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14 TaskPostRequestBodyCustomFieldsMember14 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15? TaskPostRequestBodyCustomFieldsMember15 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15? TaskPostRequestBodyCustomFieldsMember15 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15 TaskPostRequestBodyCustomFieldsMember15 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15 TaskPostRequestBodyCustomFieldsMember15 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2? TaskPostRequestBodyCustomFieldsMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2? TaskPostRequestBodyCustomFieldsMember2 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2 TaskPostRequestBodyCustomFieldsMember2 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2 TaskPostRequestBodyCustomFieldsMember2 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3? TaskPostRequestBodyCustomFieldsMember3 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3? TaskPostRequestBodyCustomFieldsMember3 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3 TaskPostRequestBodyCustomFieldsMember3 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3 TaskPostRequestBodyCustomFieldsMember3 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4? TaskPostRequestBodyCustomFieldsMember4 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4? TaskPostRequestBodyCustomFieldsMember4 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4 TaskPostRequestBodyCustomFieldsMember4 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4 TaskPostRequestBodyCustomFieldsMember4 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5? TaskPostRequestBodyCustomFieldsMember5 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5? TaskPostRequestBodyCustomFieldsMember5 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5 TaskPostRequestBodyCustomFieldsMember5 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5 TaskPostRequestBodyCustomFieldsMember5 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6? TaskPostRequestBodyCustomFieldsMember6 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6? TaskPostRequestBodyCustomFieldsMember6 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6 TaskPostRequestBodyCustomFieldsMember6 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6 TaskPostRequestBodyCustomFieldsMember6 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7? TaskPostRequestBodyCustomFieldsMember7 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7? TaskPostRequestBodyCustomFieldsMember7 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7 TaskPostRequestBodyCustomFieldsMember7 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7 TaskPostRequestBodyCustomFieldsMember7 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8? TaskPostRequestBodyCustomFieldsMember8 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8? TaskPostRequestBodyCustomFieldsMember8 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8 TaskPostRequestBodyCustomFieldsMember8 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8 TaskPostRequestBodyCustomFieldsMember8 { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9"/></summary>
+            /// <summary>Composed type representation for type <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9? TaskPostRequestBodyCustomFieldsMember9 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9? TaskPostRequestBodyCustomFieldsMember9 { get; set; }
 #nullable restore
 #else
-            public global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9 TaskPostRequestBodyCustomFieldsMember9 { get; set; }
+            public global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9 TaskPostRequestBodyCustomFieldsMember9 { get; set; }
 #endif
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields"/></returns>
+            /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-                var result = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields();
-                result.TaskPostRequestBodyCustomFieldsMember1 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1();
-                result.TaskPostRequestBodyCustomFieldsMember10 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10();
-                result.TaskPostRequestBodyCustomFieldsMember11 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11();
-                result.TaskPostRequestBodyCustomFieldsMember12 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12();
-                result.TaskPostRequestBodyCustomFieldsMember13 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13();
-                result.TaskPostRequestBodyCustomFieldsMember14 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14();
-                result.TaskPostRequestBodyCustomFieldsMember15 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15();
-                result.TaskPostRequestBodyCustomFieldsMember2 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2();
-                result.TaskPostRequestBodyCustomFieldsMember3 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3();
-                result.TaskPostRequestBodyCustomFieldsMember4 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4();
-                result.TaskPostRequestBodyCustomFieldsMember5 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5();
-                result.TaskPostRequestBodyCustomFieldsMember6 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6();
-                result.TaskPostRequestBodyCustomFieldsMember7 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7();
-                result.TaskPostRequestBodyCustomFieldsMember8 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8();
-                result.TaskPostRequestBodyCustomFieldsMember9 = new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9();
+                var result = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody.TaskPostRequestBody_custom_fields();
+                result.TaskPostRequestBodyCustomFieldsMember1 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1();
+                result.TaskPostRequestBodyCustomFieldsMember10 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember10();
+                result.TaskPostRequestBodyCustomFieldsMember11 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember11();
+                result.TaskPostRequestBodyCustomFieldsMember12 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember12();
+                result.TaskPostRequestBodyCustomFieldsMember13 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13();
+                result.TaskPostRequestBodyCustomFieldsMember14 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember14();
+                result.TaskPostRequestBodyCustomFieldsMember15 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember15();
+                result.TaskPostRequestBodyCustomFieldsMember2 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember2();
+                result.TaskPostRequestBodyCustomFieldsMember3 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember3();
+                result.TaskPostRequestBodyCustomFieldsMember4 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember4();
+                result.TaskPostRequestBodyCustomFieldsMember5 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember5();
+                result.TaskPostRequestBodyCustomFieldsMember6 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember6();
+                result.TaskPostRequestBodyCustomFieldsMember7 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember7();
+                result.TaskPostRequestBodyCustomFieldsMember8 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember8();
+                result.TaskPostRequestBodyCustomFieldsMember9 = new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember9();
                 return result;
             }
             /// <summary>
@@ -365,7 +365,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
             public virtual void Serialize(ISerializationWriter writer)
             {
                 if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-                writer.WriteObjectValue<global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1>(null, TaskPostRequestBodyCustomFieldsMember1, TaskPostRequestBodyCustomFieldsMember10, TaskPostRequestBodyCustomFieldsMember11, TaskPostRequestBodyCustomFieldsMember12, TaskPostRequestBodyCustomFieldsMember13, TaskPostRequestBodyCustomFieldsMember14, TaskPostRequestBodyCustomFieldsMember15, TaskPostRequestBodyCustomFieldsMember2, TaskPostRequestBodyCustomFieldsMember3, TaskPostRequestBodyCustomFieldsMember4, TaskPostRequestBodyCustomFieldsMember5, TaskPostRequestBodyCustomFieldsMember6, TaskPostRequestBodyCustomFieldsMember7, TaskPostRequestBodyCustomFieldsMember8, TaskPostRequestBodyCustomFieldsMember9);
+                writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember1>(null, TaskPostRequestBodyCustomFieldsMember1, TaskPostRequestBodyCustomFieldsMember10, TaskPostRequestBodyCustomFieldsMember11, TaskPostRequestBodyCustomFieldsMember12, TaskPostRequestBodyCustomFieldsMember13, TaskPostRequestBodyCustomFieldsMember14, TaskPostRequestBodyCustomFieldsMember15, TaskPostRequestBodyCustomFieldsMember2, TaskPostRequestBodyCustomFieldsMember3, TaskPostRequestBodyCustomFieldsMember4, TaskPostRequestBodyCustomFieldsMember5, TaskPostRequestBodyCustomFieldsMember6, TaskPostRequestBodyCustomFieldsMember7, TaskPostRequestBodyCustomFieldsMember8, TaskPostRequestBodyCustomFieldsMember9);
             }
         }
     }

@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Team.Item.Guest.Item
+namespace SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -43,13 +43,13 @@ namespace ClickUp.Api.V2.Team.Item.Guest.Item
         /// <summary>The user property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user? User { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user? User { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user User { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user User { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest"/> and sets the default values.
         /// </summary>
         public WithGuest_PutResponse_guest()
         {
@@ -58,12 +58,12 @@ namespace ClickUp.Api.V2.Team.Item.Guest.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest();
+            return new global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -80,7 +80,7 @@ namespace ClickUp.Api.V2.Team.Item.Guest.Item
                 { "can_see_time_spent", n => { CanSeeTimeSpent = n.GetBoolValue(); } },
                 { "invited_by", n => { InvitedBy = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "shared", n => { Shared = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
-                { "user", n => { User = n.GetObjectValue<global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user>(global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user.CreateFromDiscriminatorValue); } },
+                { "user", n => { User = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user>(global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -97,7 +97,7 @@ namespace ClickUp.Api.V2.Team.Item.Guest.Item
             writer.WriteBoolValue("can_see_time_spent", CanSeeTimeSpent);
             writer.WriteObjectValue<UntypedNode>("invited_by", InvitedBy);
             writer.WriteObjectValue<UntypedNode>("shared", Shared);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user>("user", User);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Team.Item.Guest.Item.WithGuest_PutResponse_guest_user>("user", User);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

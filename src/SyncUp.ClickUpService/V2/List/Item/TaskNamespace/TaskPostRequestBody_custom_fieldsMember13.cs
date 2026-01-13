@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.List.Item.TaskNamespace
+namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
 {
     /// <summary>
     /// Enter an array of the universal unique identifiers (UUIDs) of the labels you want to apply. You can find the UUIDs available for each Label Custom Field using [Get Accessible Custom Fields.](ref:getaccessiblecustomfields) Label Custom Fields are nullable: `&quot;value&quot;: null`.
@@ -32,7 +32,7 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         public List<string> Value { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/> and sets the default values.
         /// </summary>
         public TaskPostRequestBody_custom_fieldsMember13()
         {
@@ -41,12 +41,12 @@ namespace ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13 CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13 CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13();
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace.TaskPostRequestBody_custom_fieldsMember13();
         }
         /// <summary>
         /// The deserialization information for the current model

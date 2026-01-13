@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace ClickUp.Api.V2.List.Item.Comment
+namespace SyncUp.ClickUp.Api.V2.List.Item.Comment
 {
     /// <summary>
     /// Builds and executes requests for operations under \v2\list\{list_id}\comment
@@ -17,7 +17,7 @@ namespace ClickUp.Api.V2.List.Item.Comment
     public partial class CommentRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -25,7 +25,7 @@ namespace ClickUp.Api.V2.List.Item.Comment
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,80 +35,80 @@ namespace ClickUp.Api.V2.List.Item.Comment
         /// <summary>
         /// View the comments added to a List. \ \If you do not include the `start` and `start_id` parameters, this endpoint will return the most recent 25 comments.\ \Use the `start` and `start id` parameters of the oldest comment to retrieve the next 25 comments.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentGetResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentGetResponse?> GetAsCommentGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentGetResponse?> GetAsCommentGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentGetResponse> GetAsCommentGetResponseAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentGetResponse> GetAsCommentGetResponseAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.Comment.CommentGetResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.Comment.CommentGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentGetResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentGetResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the comments added to a List. \ \If you do not include the `start` and `start_id` parameters, this endpoint will return the most recent 25 comments.\ \Use the `start` and `start id` parameters of the oldest comment to retrieve the next 25 comments.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use GetAsCommentGetResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse?> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse?> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse> GetAsync(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse> GetAsync(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.Comment.CommentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a comment to a List.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentPostResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentPostResponse?> PostAsCommentPostResponseAsync(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostResponse?> PostAsCommentPostResponseAsync(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentPostResponse> PostAsCommentPostResponseAsync(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostResponse> PostAsCommentPostResponseAsync(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.Comment.CommentPostResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.Comment.CommentPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Add a comment to a List.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentResponse"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         [Obsolete("This method is obsolete. Use PostAsCommentPostResponseAsync instead.")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse?> PostAsync(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse?> PostAsync(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse> PostAsync(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse> PostAsync(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<global::ClickUp.Api.V2.List.Item.Comment.CommentResponse>(requestInfo, global::ClickUp.Api.V2.List.Item.Comment.CommentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse>(requestInfo, global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentResponse.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// View the comments added to a List. \ \If you do not include the `start` and `start_id` parameters, this endpoint will return the most recent 25 comments.\ \Use the `start` and `start id` parameters of the oldest comment to retrieve the next 25 comments.
@@ -117,11 +117,11 @@ namespace ClickUp.Api.V2.List.Item.Comment
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
             var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
@@ -137,11 +137,11 @@ namespace ClickUp.Api.V2.List.Item.Comment
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
@@ -154,11 +154,11 @@ namespace ClickUp.Api.V2.List.Item.Comment
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder WithUrl(string rawUrl)
+        public global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder(rawUrl, RequestAdapter);
+            return new global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
         /// View the comments added to a List. \ \If you do not include the `start` and `start_id` parameters, this endpoint will return the most recent 25 comments.\ \Use the `start` and `start id` parameters of the oldest comment to retrieve the next 25 comments.
@@ -185,7 +185,7 @@ namespace ClickUp.Api.V2.List.Item.Comment
         /// </summary>
         [Obsolete("This class is deprecated. Please use the generic RequestConfiguration class generated by the generator.")]
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class CommentRequestBuilderGetRequestConfiguration : RequestConfiguration<global::ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>
+        public partial class CommentRequestBuilderGetRequestConfiguration : RequestConfiguration<global::SyncUp.ClickUp.Api.V2.List.Item.Comment.CommentRequestBuilder.CommentRequestBuilderGetQueryParameters>
         {
         }
         /// <summary>

@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
+namespace SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -89,10 +89,10 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <summary>The linked_tasks property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>? LinkedTasks { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>? LinkedTasks { get; set; }
 #nullable restore
 #else
-        public List<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks> LinkedTasks { get; set; }
+        public List<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks> LinkedTasks { get; set; }
 #endif
         /// <summary>The list property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -191,7 +191,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         public string Url { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task"/> and sets the default values.
         /// </summary>
         public WithLinks_toPostResponse_task()
         {
@@ -200,12 +200,12 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task();
+            return new global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -224,7 +224,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
                 { "due_date", n => { DueDate = n.GetStringValue(); } },
                 { "folder", n => { Folder = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "id", n => { Id = n.GetStringValue(); } },
-                { "linked_tasks", n => { LinkedTasks = n.GetCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>(global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks.CreateFromDiscriminatorValue)?.AsList(); } },
+                { "linked_tasks", n => { LinkedTasks = n.GetCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>(global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "list", n => { List = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "name", n => { Name = n.GetStringValue(); } },
                 { "orderindex", n => { Orderindex = n.GetStringValue(); } },
@@ -255,7 +255,7 @@ namespace ClickUp.Api.V2.TaskNamespace.Item.Link.Item
             writer.WriteStringValue("due_date", DueDate);
             writer.WriteObjectValue<UntypedNode>("folder", Folder);
             writer.WriteStringValue("id", Id);
-            writer.WriteCollectionOfObjectValues<global::ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>("linked_tasks", LinkedTasks);
+            writer.WriteCollectionOfObjectValues<global::SyncUp.ClickUp.Api.V2.TaskNamespace.Item.Link.Item.WithLinks_toPostResponse_task_linked_tasks>("linked_tasks", LinkedTasks);
             writer.WriteObjectValue<UntypedNode>("list", List);
             writer.WriteStringValue("name", Name);
             writer.WriteStringValue("orderindex", Orderindex);

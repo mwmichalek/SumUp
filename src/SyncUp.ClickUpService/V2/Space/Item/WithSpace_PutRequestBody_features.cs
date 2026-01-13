@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Space.Item
+namespace SyncUp.ClickUp.Api.V2.Space.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -17,77 +17,77 @@ namespace ClickUp.Api.V2.Space.Item
         /// <summary>The checklists property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists? Checklists { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists? Checklists { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists Checklists { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists Checklists { get; set; }
 #endif
         /// <summary>The custom_fields property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields? CustomFields { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields? CustomFields { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields CustomFields { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields CustomFields { get; set; }
 #endif
         /// <summary>The dependency_warning property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning? DependencyWarning { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning? DependencyWarning { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning DependencyWarning { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning DependencyWarning { get; set; }
 #endif
         /// <summary>The due_dates property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates? DueDates { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates? DueDates { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates DueDates { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates DueDates { get; set; }
 #endif
         /// <summary>The portfolios property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios? Portfolios { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios? Portfolios { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios Portfolios { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios Portfolios { get; set; }
 #endif
         /// <summary>The remap_dependencies property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies? RemapDependencies { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies? RemapDependencies { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies RemapDependencies { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies RemapDependencies { get; set; }
 #endif
         /// <summary>The tags property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags? Tags { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags? Tags { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags Tags { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags Tags { get; set; }
 #endif
         /// <summary>The time_estimates property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates? TimeEstimates { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates? TimeEstimates { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates TimeEstimates { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates TimeEstimates { get; set; }
 #endif
         /// <summary>The time_tracking property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking? TimeTracking { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking? TimeTracking { get; set; }
 #nullable restore
 #else
-        public global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking TimeTracking { get; set; }
+        public global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking TimeTracking { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features"/> and sets the default values.
         /// </summary>
         public WithSpace_PutRequestBody_features()
         {
@@ -96,12 +96,12 @@ namespace ClickUp.Api.V2.Space.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features();
+            return new global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -111,15 +111,15 @@ namespace ClickUp.Api.V2.Space.Item
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "checklists", n => { Checklists = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists.CreateFromDiscriminatorValue); } },
-                { "custom_fields", n => { CustomFields = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields.CreateFromDiscriminatorValue); } },
-                { "dependency_warning", n => { DependencyWarning = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning.CreateFromDiscriminatorValue); } },
-                { "due_dates", n => { DueDates = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates.CreateFromDiscriminatorValue); } },
-                { "portfolios", n => { Portfolios = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios.CreateFromDiscriminatorValue); } },
-                { "remap_dependencies", n => { RemapDependencies = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies.CreateFromDiscriminatorValue); } },
-                { "tags", n => { Tags = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags.CreateFromDiscriminatorValue); } },
-                { "time_estimates", n => { TimeEstimates = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates.CreateFromDiscriminatorValue); } },
-                { "time_tracking", n => { TimeTracking = n.GetObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking>(global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking.CreateFromDiscriminatorValue); } },
+                { "checklists", n => { Checklists = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists.CreateFromDiscriminatorValue); } },
+                { "custom_fields", n => { CustomFields = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields.CreateFromDiscriminatorValue); } },
+                { "dependency_warning", n => { DependencyWarning = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning.CreateFromDiscriminatorValue); } },
+                { "due_dates", n => { DueDates = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates.CreateFromDiscriminatorValue); } },
+                { "portfolios", n => { Portfolios = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios.CreateFromDiscriminatorValue); } },
+                { "remap_dependencies", n => { RemapDependencies = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies.CreateFromDiscriminatorValue); } },
+                { "tags", n => { Tags = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags.CreateFromDiscriminatorValue); } },
+                { "time_estimates", n => { TimeEstimates = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates.CreateFromDiscriminatorValue); } },
+                { "time_tracking", n => { TimeTracking = n.GetObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking>(global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking.CreateFromDiscriminatorValue); } },
             };
         }
         /// <summary>
@@ -129,15 +129,15 @@ namespace ClickUp.Api.V2.Space.Item
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists>("checklists", Checklists);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields>("custom_fields", CustomFields);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning>("dependency_warning", DependencyWarning);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates>("due_dates", DueDates);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios>("portfolios", Portfolios);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies>("remap_dependencies", RemapDependencies);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags>("tags", Tags);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates>("time_estimates", TimeEstimates);
-            writer.WriteObjectValue<global::ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking>("time_tracking", TimeTracking);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_checklists>("checklists", Checklists);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_custom_fields>("custom_fields", CustomFields);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_dependency_warning>("dependency_warning", DependencyWarning);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_due_dates>("due_dates", DueDates);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_portfolios>("portfolios", Portfolios);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_remap_dependencies>("remap_dependencies", RemapDependencies);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_tags>("tags", Tags);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_estimates>("time_estimates", TimeEstimates);
+            writer.WriteObjectValue<global::SyncUp.ClickUp.Api.V2.Space.Item.WithSpace_PutRequestBody_features_time_tracking>("time_tracking", TimeTracking);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

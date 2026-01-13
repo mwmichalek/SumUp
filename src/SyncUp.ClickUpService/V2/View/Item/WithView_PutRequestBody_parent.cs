@@ -5,7 +5,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.View.Item
+namespace SyncUp.ClickUp.Api.V2.View.Item
 {
     /// <summary>
     /// The parent parameter specifies where the view is located in the ClickUp Hierarchy. Both `id` and `type` are required. \ \The `id` is the id of the Workspace, Space, Folder, or List where the view is located. \ \The `type` value indciates the level of the Hierarchy where the view is located.
@@ -26,7 +26,7 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>The level of the Hierarchy where the view is created. \ \Options include: \ \Workspace (Everything Level): `7` \ \Space: `4` \ \Folder: `5` \ \List: `6`</summary>
         public int? Type { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent"/> and sets the default values.
         /// </summary>
         public WithView_PutRequestBody_parent()
         {
@@ -35,12 +35,12 @@ namespace ClickUp.Api.V2.View.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent();
+            return new global::SyncUp.ClickUp.Api.V2.View.Item.WithView_PutRequestBody_parent();
         }
         /// <summary>
         /// The deserialization information for the current model

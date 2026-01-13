@@ -6,7 +6,7 @@ using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace ClickUp.Api.V2.Folder.Item.List_template.Item
+namespace SyncUp.ClickUp.Api.V2.Folder.Item.List_template.Item
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     #pragma warning disable CS1591
@@ -34,7 +34,7 @@ namespace ClickUp.Api.V2.Folder.Item.List_template.Item
         /// <summary>The primary error message.</summary>
         public override string Message { get => base.Message; }
         /// <summary>
-        /// Instantiates a new <see cref="global::ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error"/> and sets the default values.
+        /// Instantiates a new <see cref="global::SyncUp.ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error"/> and sets the default values.
         /// </summary>
         public Schema400Error()
         {
@@ -43,12 +43,12 @@ namespace ClickUp.Api.V2.Folder.Item.List_template.Item
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error"/></returns>
+        /// <returns>A <see cref="global::SyncUp.ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::SyncUp.ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error();
+            return new global::SyncUp.ClickUp.Api.V2.Folder.Item.List_template.Item.Schema400Error();
         }
         /// <summary>
         /// The deserialization information for the current model

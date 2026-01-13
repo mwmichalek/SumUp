@@ -1,6 +1,6 @@
 ﻿using Microsoft.Kiota.Abstractions.Serialization;
 
-namespace ClickUp.Api;
+namespace SyncUp.ClickUp.Api;
 
 public static class KiotaNodeExtensions
 {
