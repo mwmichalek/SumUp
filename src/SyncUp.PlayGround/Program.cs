@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Kiota.Abstractions.Authentication;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Http.HttpClientLibrary;
+using SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace;
 
 var config = new ConfigurationBuilder()
     .AddUserSecrets<Program>()
@@ -33,36 +34,34 @@ var client = new ClickUpApiClient(adapter);
 
 var sw = Stopwatch.StartNew();
 
-var taskResponse = await client.V2.List["901412908144"].Task.GetAsTaskGetResponseAsync((s) =>
+
+var tasks = new List<TaskGetResponse_tasks>();
+int? page = 0;
+
+while (page.HasValue)
 {
-    s.QueryParameters.Subtasks = true;
-    //s.Options.Add(WithTask_GetResponse_status);
-});
-//var taskRequest = client.V2.List["901412908144"].Task.ToGetRequestInformation();
+    var taskResponse = await client.V2.List["901412908144"].Task.GetAsTaskGetResponseAsync((s) =>
+    {
+        s.QueryParameters.Subtasks = true;
+        s.QueryParameters.Page = page.Value;
+        s.QueryParameters.IncludeClosed = true;
+    });
 
+    if (taskResponse is { Tasks: not null })
+    {
+        tasks.AddRange(taskResponse.Tasks);
+        page = taskResponse.LastPage.HasValue && taskResponse.LastPage.Value ? null : page + 1;
+    } else 
+        page = null;
+}
 
-var tasks = taskResponse.Tasks;
-
-foreach (var task in tasks)
+foreach (var task in tasks.Where(t => t is { StatusName: Statuses.Queued, InitiativeTask: true }))
 {
     Console.WriteLine($"Id: {task.Id}, Name: {task.Name}, Status: {task.StatusName} Parent: {task.Parent}");
+}
 
-    //var status = task.Status.AsDictionary()?["status"]?.AsString();
-    
-    // if (task.Status is UntypedObject untypedObject)
-    // {
-    //     var fields = untypedObject.GetValue();
-    //     if (fields.TryGetValue("status", out var statusNode) && statusNode is UntypedString statusString)
-    //     {
-    //         var status = statusString.GetValue();
-    //     }
-    // }
-    
-    // if (task.Status is UntypedObject untypedObject && 
-    //     untypedObject.GetValue().TryGetValue("status", out var statusNode) &&
-    //     statusNode is UntypedString untypedStringValue)
-    // {
-    //     var status = untypedStringValue.GetValue();
-    // }
+foreach (var statusName in tasks.Select(t => t.StatusName).Distinct())
+{
+    Console.WriteLine($"{statusName}");
 }
 Console.WriteLine($"{sw.ElapsedMilliseconds} ms");
