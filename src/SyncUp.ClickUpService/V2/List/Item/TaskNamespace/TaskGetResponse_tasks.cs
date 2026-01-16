@@ -17,10 +17,10 @@ namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
         /// <summary>The assignees property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Assignees { get; set; }
+        public UntypedNode? Assignees { get; set; }
 #nullable restore
 #else
-        public List<string> Assignees { get; set; }
+        public UntypedNode Assignees { get; set; }
 #endif
         /// <summary>The checklists property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -251,7 +251,7 @@ namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "assignees", n => { Assignees = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
+                { "assignees", n => { Assignees = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "checklists", n => { Checklists = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
                 { "creator", n => { Creator = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
                 { "custom_fields", n => { CustomFields = n.GetObjectValue<UntypedNode>(UntypedNode.CreateFromDiscriminatorValue); } },
@@ -288,7 +288,7 @@ namespace SyncUp.ClickUp.Api.V2.List.Item.TaskNamespace
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfPrimitiveValues<string>("assignees", Assignees);
+            writer.WriteObjectValue<UntypedNode>("assignees", Assignees);
             writer.WriteCollectionOfPrimitiveValues<string>("checklists", Checklists);
             writer.WriteObjectValue<UntypedNode>("creator", Creator);
             writer.WriteObjectValue<UntypedNode>("custom_fields", CustomFields);
